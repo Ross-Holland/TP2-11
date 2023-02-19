@@ -1,0 +1,11 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.login-container{
+    background-color: grey;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 500px;
+}
