@@ -43,9 +43,7 @@
                 <label>Message</label>
                 <textarea rows="5" placeholder="what would you like to know?"></textarea>
 
-                <button id="submit-button">Submit</button>
-
-                const submitButton = document.getElementById('submit-button');
+                <button type="submit">SEND</button>
 
             </form>
         </div>
@@ -76,32 +74,24 @@
 
     </div>   
     </div>
-    const submitButton = document.getElementById('submit-button');
-
-    submitButton.addEventListener('click', function() {
-      // code to handle the button click event goes here
-    });
-
-    submitButton.addEventListener('click', function() {
-        // get user input values from the form
-        const name = document.getElementById('name-input').value;
-        const email = document.getElementById('email-input').value;
-        const message = document.getElementById('message-input').value;
-      
-        // send email using EmailJS
-        emailjs.send('service_id', 'template_id', {
-          from_name: name,
-          from_email: email,
-          message: message
-        })
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-          console.log('FAILED...', error);
-        });
-      });
-
-      <script src="contact.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "zedy686@gmail.com",
+                Password : "zuhaib123",
+                To : 'zuhaib.hussain2001@gmail.com',
+                From : document.getElementById("Email").value,
+                Subject : "product problems",
+                Body : "Name: " + document.getElementById("Name").value
+                    + "<br> Email: " + document.getElementById("Email").value
+                    + "<br> Phone number: " + document.getElementById("Phone").value
+                    + "<br> Message: " + document.getElementById("Message").value
+            }).then(
+            message => alert(Message, Sent, Successfully)
+            );
+        }
+    </script>
 </body>
 </html>
