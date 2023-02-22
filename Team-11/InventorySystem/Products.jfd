@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "8.0.2.0.220" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:34:p, par t {seq {comp label6:::p:113:p, space :6:6:p, comp textField5:::p:197:p}, par l {par l {seq t {comp label3:::p:113:p, space :::p, comp textField2:::p:197:p}, seq {par l {comp label2:::p:113:p, comp label4::l:p:113:p}, space :::p, par l {comp textField3:::p:197:p, comp textField1::l:p:197:p}}}, seq l {comp label5:::p:113:p, space :::p, comp textField4:::p:197:p}, seq l {comp button1:::p:90:p, space :p:18:p, comp button2:::p:90:p, space s:::p, comp button3:::p:90:p}}, seq t {comp label7:::p:113:p, space :6:6:p, comp textField6:::p:197:p}}, space ::120:x, comp table1:::p:542:p, space :::p}, comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq l {par l {seq {comp panel2:::p::p, space :p:27:p, par l {comp label3:::p:33:p, comp textField2:::::x}, space :p:36:p, par l {seq {comp label4:::p:33:p, space :p:43:p, par b {comp label2::b:p:33:p, comp textField1::b:p:33:p}}, comp textField3:::p:33:p}, space :p:36:p, par b {comp label5::b:p:33:p, comp textField4::b:p:33:p}, space :p:36:p, par l {comp label6:::p:33:p, comp textField5:::p:35:p}, space :p:40:p, par l {comp label7:::p:33:p, comp textField6:::p:35:p}}, seq {space :p:136:p, comp table1::::388:x}}, space :p:36:p, par b {comp button1::b:p::p, comp button2::b:p::p, comp button3::b:p::p}, space :p:35:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:20:p, comp button4:::p:120:p, space :p:294:p, comp label1:::p:196:p, space ::388:x}}"
+				"$verticalGroup": "par l {seq l {space :p:17:p, par b {comp button4::b:p:44:p, comp label1::b::44:x}, space ::37:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Manage Products"
+					"font": new java.awt.Font( "Calibri", 1, 20 )
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "Home"
+					"background": &Color0 new java.awt.Color( 204, 204, 204, 255 )
+					"foreground": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+					"font": &Font0 new java.awt.Font( "Calibri", 1, 14 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Description"
+				"font": new java.awt.Font( "Calibri", 1, 21 )
+				"foreground": &Color2 new java.awt.Color( 0, 0, 0, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"background": &Color3 new java.awt.Color( 255, 255, 255, 255 )
+				"font": &Font1 new java.awt.Font( "Calibri", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Product ID"
+				"font": new java.awt.Font( "Calibri", 1, 21 )
+				"foreground": #Color2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"background": #Color3
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Name"
+				"font": new java.awt.Font( "Calibri", 1, 21 )
+				"foreground": #Color2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+				"background": #Color3
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Quantity"
+				"font": new java.awt.Font( "Calibri", 1, 21 )
+				"foreground": #Color2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+				"background": #Color3
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Add"
+				"background": #Color0
+				"foreground": #Color1
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Price"
+				"font": &Font2 new java.awt.Font( "Calibri", 1, 21 )
+				"foreground": #Color2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+				"background": #Color3
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Image"
+				"font": #Font2
+				"foreground": #Color2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+				"background": #Color3
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Edit"
+				"background": #Color0
+				"foreground": #Color1
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Remove"
+				"background": #Color0
+				"foreground": #Color1
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTable" ) {
+				name: "table1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 75, 30 )
+			"size": new java.awt.Dimension( 1020, 645 )
+		} )
+	}
+}

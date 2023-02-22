@@ -1,0 +1,73 @@
+JFDML JFormDesigner: "8.0.2.0.220" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "frame1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp panel2::t:::x, seq l {space :p:141:p, par l {comp label3:::p:108:p, comp label2:::p:113:p, comp button1:::p:137:p}, space :p:42:p, par l:::p {comp textField1::::197:x, comp textField2::::197:x, seq l {space :p:21:p, comp button2:::p:137:p}}, space ::126:x}}"
+				"$verticalGroup": "par l {seq l {comp panel2:::p::p, space :p:84:p, par b {comp textField1::b:p:33:p, comp label2::b::33:x}, space :p:33:p, par b {comp textField2::b:p:33:p, comp label3::b::33:x}, space :p:34:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space :0:170:x}}"
+			} ) {
+				name: "panel1"
+				"background": sfield java.awt.Color gray
+				"foreground": sfield java.awt.Color gray
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::236:x, comp label1::::174:x, space :p:233:p}}"
+					"$verticalGroup": "par l {seq l {space :p:18:p, comp label1::::33:x, space ::25:x}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Inventory System"
+						"font": &Font0 new java.awt.Font( "Calibri", 1, 24 )
+						"foreground": &Color0 new java.awt.Color( 0, 0, 0, 255 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Username"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Password"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"background": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+					"font": &Font1 new java.awt.Font( "Calibri", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+					"background": #Color1
+					"font": #Font1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Login"
+					"background": &Color2 new java.awt.Color( 204, 204, 204, 255 )
+					"foreground": &Color3 new java.awt.Color( 255, 255, 255, 255 )
+					"font": &Font2 new java.awt.Font( "Calibri", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Clear"
+					"background": #Color2
+					"foreground": #Color3
+					"font": #Font2
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 70, 25 )
+			"size": new java.awt.Dimension( 645, 530 )
+		} )
+	}
+}
