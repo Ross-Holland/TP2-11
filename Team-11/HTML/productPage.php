@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
 
-require_once 'connect.php';
+require_once 'connectprd.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ require_once 'connect.php';
             <a href="" class="dropbtn">Products</a>
             <div class="dropdown-content">
                 <?php
-                include('connect.php');
+                include('connectprd.php');
                 
                     $sql = "SELECT * FROM categories";
                     $result = $db->query($sql);
@@ -58,7 +58,7 @@ require_once 'connect.php';
             <div class="products">
             <div class="product-container">
                 <?php
-                    include('connect.php');
+                    include('connectprd.php');
                     $sql = "SELECT * FROM products";
                     $result = $db->query($sql);
 
