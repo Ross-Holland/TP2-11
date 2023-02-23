@@ -62,10 +62,10 @@ COMMIT;
 --block 3--
 CREATE TABLE `cart` (
   `product_id` varchar(255)
-)
+);
 CREATE TABLE `wishlist` (
   `product_id` varchar(255)
-)
+);
 --block 3 end--
 --block 4--
 CREATE TABLE `orders` (
