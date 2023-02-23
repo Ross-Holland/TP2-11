@@ -1,32 +1,33 @@
 <head>
     <meta charset="utf-8" />
     <title>Step Correct</title>
-    <link rel="icon" href="images/favicon.ico?v=2" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
+    <link rel="icon" href="../Images/favicon.ico?v=2" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css" />
     <script src="https://kit.fontawesome.com/c54d8b2ca0.js" crossorigin="anonymous">
     </script>
-    <script defer src="js/main.js"></script>
+    <script defer src="../JS/main.js"></script>
 </head>
 
 
     <div class="topnav" id="myTopnav">
 
         <div class="topnav-left">
-            <img src="images/logo.png" alt="" />
+            <img src="../Images/logo.png" alt="logo" />
         </div>
 
         <div class="topnav-centre">
-            <a href="index.php">Home</a>
-            <a href="#">Womens</a>
-            <a href="#">Mens</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
+            <a href="../HTML/index.php">Home</a>
+            <a href="../HTML/productPage.php">Womens</a>
+            <a href="../HTML/productPageMen.php">Mens</a>
+            <a href="../HTML/productPagekids.php">Kids</a>
+            <a href="../HTML/AboutUs.php">About</a>
+            <a href="../HTML/ContactUs.php">Contact Us</a>
         </div>
 
         <div class="topnav-right">
             <a href="#"><i class="fa fa-search"></i></a>
-            <a href="wishlist.php"><i class="fa fa-heart-o"></i></a>
-            <a href="basket.php"><i class="fa fa-shopping-cart"></i></a>
+            <a href="../HTML/wishlist.php"><i class="fa fa-heart-o"></i></a>
+            <a href="../HTML/basket.php"><i class="fa fa-shopping-cart"></i></a>
         </div>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">

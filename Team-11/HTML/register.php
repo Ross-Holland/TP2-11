@@ -2,35 +2,36 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="background">
 
 <head>
-<?php
+    <?php
     include_once 'header.php';
     ?>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/register.css" />
 </head>
 
 
-
-
 <body>
-    <div class="main-body">
-        <div class="reg-container">
-            <h1 div class="title">Step Correct</h1>
-            <div class="reg-box">
-                <p1>
-                    <div class="reg-text">To Register an account with us, please fill in your details below:</div>
-                </p1>
-                <form id="register" method="post">
-                    <input type="text" name="Fname" placeholder="First Name" required>
-                    <input type="text" name="Lname" placeholder="Last Name" required>
-                    <input type="text" name="Email" placeholder="Email Address" required>
-                    <input type="password" name="Password" placeholder="Password" required>
-                    <input type="password" name="Cpassword" placeholder="Confirm Password" required>
-                    <input type="text" name="Address" class="" id="Address" placeholder="Enter your address" required>
-                    <input type="tel" id="phone" name="phone" class="" placeholder="01234567890" pattern="[0-9]{11}" required>
-                    <input type="submit" value="Submit" name="submit" class="submit-button" id="submit">
-                </form>
+    <div class="content">
+        <div class="main-body">
+            <div class="reg-container">
+                <h1 div class="title">Step Correct</h1>
+                <div class="reg-box">
+                    <p1>
+                        <div class="reg-text">To Register an account with us, please fill in your details below:</div>
+                    </p1>
+                    <form id="register" method="post">
+                        <input type="text" name="Fname" placeholder="First Name" required>
+                        <input type="text" name="Lname" placeholder="Last Name" required>
+                        <input type="text" name="Email" placeholder="Email Address" required>
+                        <input type="password" name="Password" placeholder="Password" required>
+                        <input type="password" name="Cpassword" placeholder="Confirm Password" required>
+                        <input type="text" name="Address" class="" id="Address" placeholder="Enter your address" required>
+                        <input type="tel" id="phone" name="phone" class="" placeholder="01234567890" pattern="[0-9]{11}" required>
+                        <input type="submit" value="Submit" name="submit" class="submit-button" id="submit">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 <?php
@@ -72,4 +73,10 @@ if (isset($_POST['submit'])) {
 
 ?>
 
+</div>
+
 </html>
+
+<?php
+include('footer.php');
+?>

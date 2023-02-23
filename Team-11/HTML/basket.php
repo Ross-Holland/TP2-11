@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/wishlist-basket.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/wishlist-basket.css" />
 </head>
 
 <body>
@@ -21,12 +21,12 @@
 
             <section id="shopnow">
                 <div class="shopnow">
-                    <img src="images/shopwomens.jpg" alt="womens" />
-                    <div class="centered"><a href="womens.php"><button class="btn">Shop Now</button></a></div>
+                    <img src="../Images/shopwomens.jpg" alt="womens" />
+                    <div class="centered"><a href="../HTML/productPage.php"><button class="btn">Shop Now</button></a></div>
                 </div>
                 <div class="shopnow">
-                    <img src="images/shopmens.jpg" alt="mens" />
-                    <div class="centered"><a href="mens.php"><button class="btn">Shop Now</button></a></div>
+                    <img src="../Images/shopmens.jpg" alt="mens" />
+                    <div class="centered"><a href="../HTML/productPageMen.php"><button class="btn">Shop Now</button></a></div>
                 </div>
             </section>
 
