@@ -25,7 +25,6 @@
 
         <div class="topnav-right">
             <a href="#"><i class="fa fa-search"></i></a>
-            <a href="#"><i class="fas fa-user-circle"></i></a>
             <a href="wishlist.php"><i class="fa fa-heart-o"></i></a>
             <a href="basket.php"><i class="fa fa-shopping-cart"></i></a>
         </div>
