@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
 
-require_once 'connectprd.php';
+require_once 'connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +26,10 @@ require_once 'connectprd.php';
             <a href="" class="dropbtn">Products</a>
             <div class="dropdown-content">
                 <?php
-                include('connectprd.php');
+                include('connect.php');
                 
                     $sql = "SELECT * FROM categories";
-                    $result = $db->query($sql);
+                    $result = $conn->query($sql);
 
                     // Process the query results
                     if ($result->num_rows > 0) {
@@ -58,9 +58,9 @@ require_once 'connectprd.php';
             <div class="products">
             <div class="product-container">
                 <?php
-                    include('connectprd.php');
+                    include('connect.php');
                     $sql = "SELECT * FROM products";
-                    $result = $db->query($sql);
+                    $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -105,132 +105,3 @@ require_once 'connectprd.php';
 </body>
 
 </html>
-           
-
-
-
-
-<!--
-            <div class = "products">
-                <div class = "product-container">
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "img/airmax90.jpg">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Airmax 90</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(70 reviews)</li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Jordan 4</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(37 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Jordan 2</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(295 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "img/airmax.jpg">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Airforce 1</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(92 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Dior b23</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(84 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    -->     
