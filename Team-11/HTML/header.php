@@ -2,7 +2,7 @@
     <meta charset="utf-8" />
     <title>Step Correct</title>
     <link rel="icon" href="images/favicon.ico?v=2" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
     <script src="https://kit.fontawesome.com/c54d8b2ca0.js" crossorigin="anonymous">
     </script>
     <script defer src="js/main.js"></script>
