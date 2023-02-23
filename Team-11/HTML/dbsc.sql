@@ -27,6 +27,7 @@ CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category` int (5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `quantity` int(5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `price` int(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL
