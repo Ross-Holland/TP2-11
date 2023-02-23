@@ -21,10 +21,10 @@ if(isset($_SESSION["user_id"])) {
     <div class="login form">
       <header>Login</header>
       <form class="modal-content" method="post" action="loginVerification.php" >  
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Enter your password">
+        <input type="text" placeholder="Enter your email" name="email">
+        <input type="password" placeholder="Enter your password" name="password">
         <a href="#">Forgot password?</a>
-        <input type="button" class="button" value="Login">
+        <input type="submit" class="button" value="Login">
       </form>
       <div class="signup">
         <span class="signup">Don't have an account?
@@ -56,7 +56,7 @@ if(isset($_SESSION["user_id"])) {
 <?php 
     if(isset($_SESSION["user_id"])) {
         $id = $_SESSION["user_id"];
-        $sql = "SELECT firstname FROM user WHERE user_id = '$id'";
+        $sql = "SELECT email FROM user WHERE email = '$email'";
         $result = mysqli_query($conn,$sql);
         $row = mysqli_fetch_assoc($result);
         $name = $row['firstname'];
