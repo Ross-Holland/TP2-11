@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
 
-require_once 'connect.php';
+require_once 'connectprd.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,18 +18,17 @@ require_once 'connect.php';
 </head>
 
 <body>
-
-    <ul class="navbar">
+<ul class="navbar">
         <li><a href="">Home</a></li>
 
         <li class="dropdown">
             <a href="" class="dropbtn">Products</a>
             <div class="dropdown-content">
                 <?php
-                include('connect.php');
+                include('connectprd.php');
                 
                     $sql = "SELECT * FROM categories";
-                    $result = $conn->query($sql);
+                    $result = $db->query($sql);
 
                     // Process the query results
                     if ($result->num_rows > 0) {
@@ -41,26 +40,27 @@ require_once 'connect.php';
                         echo "0 results";
                     }
                 ?>
+            </div>
         </li>
    
         <li><a href="">Contact</a></li>
         <li><a href="">About</a></li>
-        <div>
     </ul>
 
     <div class = "wrapper">
         <div class = "container">
             <div class = "header">
-                <h1>Men's</h1>
+                <h1>Kids</h1>
             </div>
 
 
             <div class="products">
             <div class="product-container">
                 <?php
-                    include('connect.php');
-                    $sql = "SELECT * FROM products";
-                    $result = $conn->query($sql);
+                    include('connectprd.php');
+                    $sql = "SELECT * FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id = '3'";
+                    
+                    $result = $db->query($sql);
 
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
@@ -105,3 +105,7 @@ require_once 'connect.php';
 </body>
 
 </html>
+
+
+
+</body>

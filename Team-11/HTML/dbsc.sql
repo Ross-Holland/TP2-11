@@ -33,6 +33,13 @@ CREATE TABLE `products` (
   `image` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci; 
+
+
+CREATE TABLE `categories` (
+  `category_id` bigint(20) UNSIGNED NOT NULL,
+  `category_title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci; 
 --block 1 end--
 --block 2 make sure your in the database first before you execute the sql or itll go retarded--
 ALTER TABLE `user`
@@ -45,6 +52,8 @@ ALTER TABLE `products`
 ALTER TABLE `products`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`category_id`);
 
 ALTER TABLE `user`
   MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
