@@ -41,11 +41,11 @@ require_once 'connectprd.php';
                         echo "0 results";
                     }
                 ?>
-            </div>
         </li>
    
         <li><a href="">Contact</a></li>
         <li><a href="">About</a></li>
+        <div>
     </ul>
 
     <div class = "wrapper">
