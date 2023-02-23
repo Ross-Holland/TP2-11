@@ -27,8 +27,8 @@ require_once 'connectprd.php';
             <div class="dropdown-content">
                 <?php
                 include('connectprd.php');
+                $sql = "SELECT * FROM categories";
                 
-                $sql = "SELECT * FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id = '1'";
                     $result = $db->query($sql);
 
                     // Process the query results
@@ -59,7 +59,7 @@ require_once 'connectprd.php';
             <div class="product-container">
                 <?php
                     include('connectprd.php');
-                    $sql = "SELECT * FROM products";
+                    $sql = "SELECT * FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id = '1'";
                     $result = $db->query($sql);
 
                     if ($result->num_rows > 0) {
