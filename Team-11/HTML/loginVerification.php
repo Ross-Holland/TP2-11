@@ -18,22 +18,22 @@ if (isset($_POST['email'])) {
             
             $_SESSION["user_id"] = $row["user_id"];
 
-            header("Location: registrationPage.php");
+            header("Location: productPage.php");
             
 
         } else {
             echo "<script> alert(\"Wrong password\") </script>";
-            header("Location: loginPage.php");
+            header("Location: index.php");
         }
 
     }
     else {
         echo "<script> alert(\"User not registered\") </script>";
-        header("Location: loginPage.php");
+        header("Location: index.php");
     }
 } else {
 
-    header("Location: loginPage.php");
+    header("Location: index.php");
 
 }
 

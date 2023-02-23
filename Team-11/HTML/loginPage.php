@@ -29,7 +29,8 @@ if(isset($_SESSION["user_id"])) {
       
 <body>
 
-<form class="modal-content" method="post" action="loginVerification.php" >    
+
+    <div <form class="modal-content" method="post" action="loginVerification.php" >    
     <div class="container">
       <label for="em"><b>Email Address</b></label>
       <input type="email" placeholder="Enter Email" name="email" required>
@@ -38,8 +39,7 @@ if(isset($_SESSION["user_id"])) {
         
       <button type="submit" name="Submit">Login</button>
     </div>
-    </form>
-    <div class="container" style="background-color:#f1f1f1">
+    </form>class="container" style="background-color:#f1f1f1">
       <h4> Not Registered? <a href="registrationPage.php">Register here</a>  </h4>
     </div>
   
