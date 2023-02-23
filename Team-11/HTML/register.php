@@ -2,36 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="background">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Homepage</title>
-
-    <!-- font -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="../CSS/register.css" rel="stylesheet">
+<?php
+    include_once 'header.php';
+    ?>
 </head>
 
 
 
-<header>
-    <div class="nav">
-        <a href="./index.html">
-            Login
-        </a>
-        <a href="./ContactUs.html">
-            Contact Us
-        </a>
-        <a href="./AboutUs.html">
-            About Us
-        </a>
-        <a href="./index.html">
-            Home
-        </a>
-    </div>
-</header>
 
 <body>
     <div class="main-body">

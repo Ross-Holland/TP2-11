@@ -2,25 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us - Step correct</title>
-    <link href="../CSS/contact.css" rel="stylesheet">
+    <?php
+    include_once 'header.php';
+    ?>
 </head>
 
-<header>
-    <div class="nav">
-        <a href="./index.html">
-            Step Correct
-        </a>
-        <a href="./">
-            Login
-        </a>
-        <a href="./AboutUs.html">
-            About Us
-        </a>
-    </div>
-</header>
 
 <body>
     <div class="container">
