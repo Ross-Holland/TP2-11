@@ -20,7 +20,7 @@ if(isset($_SESSION["user_id"])) {
     <input type="checkbox" id="check">
     <div class="login form">
       <header>Login</header>
-      <form class="modal-content" method="post" action="loginVerification.php" >  
+      <form class="modal-content" method="post" action="loginVerification.php">
         <input type="text" placeholder="Enter your email" name="email">
         <input type="password" placeholder="Enter your password" name="password">
         <a href="#">Forgot password?</a>
@@ -28,7 +28,8 @@ if(isset($_SESSION["user_id"])) {
       </form>
       <div class="signup">
         <span class="signup">Don't have an account?
-         <button href="./register.php">Register here!</button>
+         <!-- <button href="register.php">Register here!</button> -->
+         <label for="check">Signup</label>
         </span>
       </div>
     </div>
@@ -92,7 +93,7 @@ if (isset($_POST['submit'])) {
 
         if ($result) {
             echo ("Success!");
-            header("Location: index.html");
+            header("Location: index.php");
         }
     } else if ($password != $confirmPassword) {
         echo  "<script> alert('Passwords do not match'); </script>";
