@@ -1,3 +1,7 @@
+<?php
+include 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,13 +18,13 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="admin.php" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Users</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="adminproduct.php" action="adminproduct.php" class="active">
             <i class='bx bx-box' ></i>
             <span class="links_name">Product</span>
           </a>
@@ -44,7 +48,7 @@
           </a>
         </li>
         <li class="log_out">
-          <a href="#">
+          <a href="logout.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -71,29 +75,29 @@
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Order</div>
-            <div class="number">£</div>
+            <!-- <div class="box-topic">Total Order</div>
+            <div class="number">£</div> -->
           </div>
           <i class='bx bx-cart-alt cart'></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
-            <div class="number">£</div>
+            <!-- <div class="box-topic">Total Sales</div>
+            <div class="number">£</div> -->
           </div>
           <i class='bx bxs-cart-add cart two' ></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Profit</div>
-            <div class="number">£</div>
+            <!-- <div class="box-topic">Total Profit</div>
+            <div class="number">£</div> -->
           </div>
           <i class='bx bx-cart cart three' ></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">£</div>
+            <!-- <div class="box-topic">Total Return</div>
+            <div class="number">£</div> -->
           </div>
           <i class='bx bxs-cart-download cart four' ></i>
         </div>
@@ -101,48 +105,37 @@
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
+          <div class="title">Products</div>
           <div class="sales-details">
             <ul class="details">
-              <li class="topic">Date</li>
-              <li><a href="#">06 Feb 2023</a></li>
-              <li><a href="#">08 Feb 2023</a></li>
-              <li><a href="#">08 Feb 2023</a></li>
-              <li><a href="#">09 Feb 2023</a></li>
-              <li><a href="#">10 Feb 2023</a></li>
-              <li><a href="#">20 Feb 2023</a></li>
-              <li><a href="#">21 Feb 2023</a></li>
-            </ul>
-            <ul class="details">
-            <li class="topic">Customer</li>
-            <li><a href="#">Syed Zaidi</a></li>
-            <li><a href="#">David Dewji</a></li>
-            <li><a href="#">Laura James</a></li>
-            <li><a href="#">Lois Pooja</a></li>
-            <li><a href="#">Ali Mehdi</a></li>
-            <li><a href="#">Ammar Merali</a></li>
-            <li><a href="#">Hussain Zaidi</a></li>
-          </ul>
-          <ul class="details">
-            <li class="topic">Sales</li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li>
-          </ul>
-          <ul class="details">
-            <li class="topic">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
-          </ul>
+              <?php
+                $sql = "SELECT id, name, description, quantity, price, image, category FROM products";
+                $results = mysqli_query($conn, $sql);
+                if(mysqli_num_rows($results)>0){
+                  while($row = mysqli_fetch_array($results)){
+                  
+                      echo "ID: ", $row[0];
+                      echo "<br>";
+                      echo "Name: ", $row[1];
+                      echo "<br>";
+                      echo "Description: ", $row[2];
+                      echo "<br>";
+                      echo "Quantity: ", $row[3];
+                      echo "<br>";
+                      echo "price: ", $row[4];
+                      echo "<br>";
+                      echo "Image: ", $row[5];
+                      echo "<br>";
+                      echo "Category: ". $row[6];
+                      echo "<br>";
+                      echo "<br>";
+                    
+                  }
+                }
+                else{
+                  echo "<script> alert(\"There are no Products\") </script>";
+                }
+              ?>
           </div>
           <div class="button">
             <a href="#">See All</a>
@@ -162,4 +155,3 @@ sidebarBtn.onclick = function() {
 
 </body>
 </html>
-
