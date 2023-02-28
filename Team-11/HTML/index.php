@@ -28,7 +28,7 @@ if(isset($_SESSION["user_id"])) {
       </form>
       <div class="signup">
         <span class="signup">Don't have an account?
-         <button href="./register.php">Register here!</button>
+         <button onclick="window.location.href='./register.php';">Register here!</button>
         </span>
       </div>
     </div>
