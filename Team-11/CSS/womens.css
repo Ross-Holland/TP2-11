@@ -1,0 +1,38 @@
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+}
+
+.category img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.category .centered {
+  position: absolute;
+  top: 45%;
+  background-color: lightblue;
+  color: black;
+  font-size: 20px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.category .centered:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.5s;
+}
+
