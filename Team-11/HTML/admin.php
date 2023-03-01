@@ -30,7 +30,7 @@ include 'connect.php';
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="adminorders.php">
             <i class='bx bx-list-ul' ></i>
             <span class="links_name">Order list</span>
           </a>

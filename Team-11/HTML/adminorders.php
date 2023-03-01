@@ -24,13 +24,13 @@ include 'connect.php';
           </a>
         </li>
         <li>
-          <a href="adminproduct.php" action="adminproduct.php" class="active">
+          <a href="adminproduct.php" action="adminproduct.php" >
             <i class='bx bx-box' ></i>
             <span class="links_name">Product</span>
           </a>
         </li>
         <li>
-          <a href="adminorders.php">
+          <a href="adminorders.php" class="active">
             <i class='bx bx-list-ul' ></i>
             <span class="links_name">Order list</span>
           </a>
@@ -109,24 +109,31 @@ include 'connect.php';
           <div class="sales-details">
             <ul class="details">
               <?php
-                $sql = "SELECT id, name, description, quantity, price, image, category FROM products";
+                $sql = "SELECT 	user_id, product_id, product_name, product_description, product_price, product_image, order_processed FROM orders";
                 $results = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($results)>0){
-                  while($row = mysqli_fetch_array($results)){
+                    while($row = mysqli_fetch_array($results)){
+                        $first = "SELECT user_firstname FROM users WHERE user_id == $row[0]";
+                        $last = "SELECT user_lastname FROM users WHERE user_id == $row[0]";
                   
-                      echo "ID: ", $row[0];
-                      echo "<br>";
-                      echo "Name: ", $row[1];
-                      echo "<br>";
-                      echo "Description: ", $row[2];
-                      echo "<br>";
-                      echo "Quantity: ", $row[3];
-                      echo "<br>";
-                      echo "price: ", $row[4];
-                      echo "<br>";
-                      echo "Image: ", "<img src='$row[5]' alt='Image'>";
-                      echo "<br>";
-                      echo "Category: ". $row[6];
+                        echo "Name: ", $first, " ", $last;
+                        echo "<br>";
+                        echo "Product ID: ", $row[1];
+                        echo "<br>";
+                        echo "ProductName: ", $row[2];
+                        echo "<br>";
+                        echo "Product Description: ", $row[3];
+                        echo "<br>";
+                        echo "Price: ", $row[4];
+                        echo "<br>";
+                        echo "Image: ", "<img src='$row[5]' alt='Image'>";
+                        echo "<br>";
+                        echo "OrderProcessed: ";
+                        if ($row[6]==1){
+                            echo "Yes";
+                        } else {
+                            echo "No";
+                        }
                       echo "<br>";
                       echo "<br>";
                     
