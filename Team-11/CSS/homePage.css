@@ -28,7 +28,7 @@ html{
     background-color: lightblue;
     height: fit-content;
     width: fit-content;
-    position: absolute;
+    position: relative;
     margin-left: 35%;
     margin-top: 20px;
     padding: 10px;
@@ -36,5 +36,9 @@ html{
 
 .bold{
     font-weight: bold;
+}
+
+footer{
+    margin-top: 66px;
 }
 
