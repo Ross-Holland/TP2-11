@@ -30,6 +30,7 @@ if(isset($_SESSION["user_id"])) {
         <span class="signup">Don't have an account?
          <!-- <button href="register.php">Register here!</button> -->
          <label for="check">Signup</label>
+         <button onclick="window.location.href='./register.php';">Register here!</button>
         </span>
       </div>
     </div>
