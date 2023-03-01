@@ -13,44 +13,45 @@
     <?php
     include_once "header.php";
     ?>
-    <div class="colorContainer">
-        <div class="homepageText , bold">
-            <p1>Products Trending Now!</p1>
-        </div>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="../images/Airmax-90.jpg" style="width:100% height:20%" alt="images">
+    <div class="content">
+        <div class="colorContainer">
+            <div class="homepageText , bold">
+                <p1>Products Trending Now!</p1>
             </div>
-            <div class="mySlides fade">
-                <img src="../images/Ultraboost.jpg" style="width:100% height:20%" alt="images">
-            </div>
-            <div class="mySlides fade">
-                <img src="../images/Airmax-97.jpg" style="width:100% height:20%" alt="images">
-            </div>
-            <div class="mySlides fade">
-                <img src="../images/NMD-R1.jpg" style="width:100% height:20%" alt="images">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="../images/Airmax-90.jpg" style="width:100% height:20%" alt="images">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../images/Ultraboost.jpg" style="width:100% height:20%" alt="images">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../images/Airmax-97.jpg" style="width:100% height:20%" alt="images">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../images/NMD-R1.jpg" style="width:100% height:20%" alt="images">
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="homepageText">
-            <p1>
-                Welcome to Step Correct -
-                We are an online retailer
-                <br>
-                selling a variety of shoes and trainers.
-                <br>
-                <br>
-                Please use the navigation bar above to look around.
-                <br>
-                If you have any feedback for us, please let us know.
-                <br>
-                <br>
-                Enjoy your shop!
-            </p1>
+            <div class="homepageText">
+                <p1>
+                    Welcome to Step Correct -
+                    We are an online retailer
+                    <br>
+                    selling a variety of shoes and trainers.
+                    <br>
+                    <br>
+                    Please use the navigation bar above to look around.
+                    <br>
+                    If you have any feedback for us, please let us know.
+                    <br>
+                    <br>
+                    Enjoy your shop!
+                </p1>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
