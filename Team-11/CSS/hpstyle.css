@@ -1,39 +1,14 @@
 /* CSS Variables */
-:root {
-    --headers: #202125;
-    --background: lightblue;
-    --grey: #858585;
-    --lightgrey: #d2d2d2;
-    --shadow: 0 1px 5px rgba(0, 0, 0, 0.473);
-    --hover: 0 3px 10px rgba(0, 0, 0, 0.205);
-}
 
 body {
-    background-color: var(--background);
-    background: url(../img/NMD-Black-Cover.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: top;
-    background-origin: border-box;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 
-header {
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-}
-
-header img {
-    height: 100px;
-}
 
 .logo {
     width: 50px;
@@ -311,26 +286,6 @@ li a:hover {
     width: 100%;
     float: right;
 }
-
-
-/* Footer */
-
-footer {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    margin-top: 50px;
-    overflow: hidden;
-    background-color: var(--grey);
-}
-
-footer p {
-    font-family: 'Roboto Mono', monospace;
-    color: var(--lightgrey);
-    font-size: 14px;
-    padding: 25px;
-}
-
 
 /* Media Queries */
 

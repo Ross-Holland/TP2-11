@@ -18,6 +18,7 @@ require_once 'connect.php';
 </head>
 
 <body>
+<?php include('header.php');  ?>
 
     <ul class="navbar">
         <li><a href="">Home</a></li>
