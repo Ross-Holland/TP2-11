@@ -23,7 +23,6 @@ if(isset($_SESSION["user_id"])) {
       <form class="modal-content" method="post" action="loginVerification.php">
         <input type="text" placeholder="Enter your email" name="email">
         <input type="password" placeholder="Enter your password" name="password">
-        <a href="#">Forgot password?</a>
         <input type="submit" class="button" value="Login">
       </form>
       <div class="signup">
