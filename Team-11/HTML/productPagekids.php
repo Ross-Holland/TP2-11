@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
 
-require_once 'connectprd.php';
+require_once 'connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ require_once 'connectprd.php';
             <a href="" class="dropbtn">Products</a>
             <div class="dropdown-content">
                 <?php
-                include('connectprd.php');
+                include('connect.php');
                 
                     $sql = "SELECT * FROM categories";
                     $result = $db->query($sql);
