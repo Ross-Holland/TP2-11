@@ -18,7 +18,7 @@ if (isset($_POST['email'])) {
             
             $_SESSION["user_id"] = $row["user_id"];
 
-            header("Location: productPage.php");
+            header("Location: homepage.php");
             
 
         } else {
