@@ -74,20 +74,14 @@ CREATE TABLE `orders` (
   `product_name` varchar(500),
   `product_description` varchar(500),
   `product_price` varchar(500),
-  `product_image` varchar(500)
+  `product_image` varchar(500),
+  `order_processed` BOOLEAN,
 )
 --block 4 end--
-
+--insert products into database--
 INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `price`, `image`) VALUES
 (2, 'Black heal', 'Elegant strap', 2, 30, 20, 'blackheal.jpg'),
 (3, 'Red heal', 'Strap', 2, 20, 20, 'redheal.jpg'),
 (4, 'Black boots', 'Everyday boots', 1, 10, 26, 'blackboots.jpg'),
 (5, 'Fluffy slippers', 'Casual', 5, 20, 11, 'fluffyslippers.jpg'),
 (7, 'Black nike trainers', '', 4, 0, 70.99, 'niketrainers.jpg');
-
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-COMMIT;
