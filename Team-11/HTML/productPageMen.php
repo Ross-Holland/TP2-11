@@ -59,7 +59,7 @@ require_once 'connect.php';
             <div class="product-container">
                 <?php
                 /*change the end id to change what products show (category_id)*/
-                    include('connectprd.php');
+                    include('connect.php');
                     $sql = "SELECT * FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id = '1'";
                     $result = $db->query($sql);
                 /*fetches the products specified by each category from database*/

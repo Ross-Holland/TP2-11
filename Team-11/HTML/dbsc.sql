@@ -75,8 +75,8 @@ CREATE TABLE `orders` (
   `product_description` varchar(500),
   `product_price` varchar(500),
   `product_image` varchar(500),
-  `order_processed` BOOLEAN,
-)
+  `order_processed` BOOLEAN
+);
 --block 4 end--
 --insert products into database--
 INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `price`, `image`) VALUES
