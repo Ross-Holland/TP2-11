@@ -70,13 +70,14 @@ if (isset($_GET['category'])) {
                             $name = $row['name'];
                             $price = $row['price'];
                             $image = $row['image'];
+                            $id = $row['id'];
 
                             echo " <div class='gallery'>
                     <div class='products'>
                         <img src='../Images/$image' alt='$name'>
                         <h3>$name</h3>
                         <h6>$price</h6>
-                        <button class='view'>View Now</button>
+                        <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                     </div>
                     </div>";
                         }
@@ -92,13 +93,14 @@ if (isset($_GET['category'])) {
                             $name = $row['name'];
                             $price = $row['price'];
                             $image = $row['image'];
+                            $id = $row['id'];
 
                             echo " <div class='gallery'>
                     <div class='products'>
                         <img src='../Images/$image' alt='$name'>
                         <h3>$name</h3>
                         <h6>$price</h6>
-                        <button class='view'>View Now</button>
+                        <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                     </div>
                     </div>";
                         }
@@ -114,13 +116,14 @@ if (isset($_GET['category'])) {
                             $name = $row['name'];
                             $price = $row['price'];
                             $image = $row['image'];
+                            $id = $row['id'];
 
                             echo " <div class='gallery'>
                     <div class='products'>
                         <img src='../Images/$image' alt='$name'>
                         <h3>$name</h3>
                         <h6>$price</h6>
-                        <button class='view'>View Now</button>
+                        <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                     </div>
                     </div>";
                         }
@@ -136,13 +139,14 @@ if (isset($_GET['category'])) {
                             $name = $row['name'];
                             $price = $row['price'];
                             $image = $row['image'];
+                            $id = $row['id'];
 
                             echo " <div class='gallery'>
                     <div class='products'>
                         <img src='../Images/$image' alt='$name'>
                         <h3>$name</h3>
                         <h6>£$price</h6>
-                        <button class='view'>View Now</button>
+                        <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                     </div>
                     </div>";
                         }
@@ -158,13 +162,14 @@ if (isset($_GET['category'])) {
                             $name = $row['name'];
                             $price = $row['price'];
                             $image = $row['image'];
+                            $id = $row['id'];
 
                             echo " <div class='gallery'>
                     <div class='products'>
                         <img src='../Images/$image' alt='$name'>
                         <h3>$name</h3>
                         <h6>£$price</h6>
-                        <button class='view'>View Now</button>
+                        <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                     </div>
                     </div>";
                         }
