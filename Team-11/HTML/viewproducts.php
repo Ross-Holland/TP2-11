@@ -17,8 +17,11 @@
 
             require_once('connect.php');
 
-            $query = "SELECT * FROM products WHERE id=$id";
-            $result = $conn->query($query);
+            $viewDB = "INSERT INTO viewproduct(id) VALUES($id)";
+            $result5 =  $conn->query($viewDB);
+
+            $pin = "SELECT * FROM products WHERE id=$id";
+            $result = $conn->query($pin);
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
@@ -32,13 +35,15 @@
             }
             ?>
 
-            <form id="fulldetails" action="" method="POST">
+            <form id="fulldetails" action="./addToBasket.php" method="POST">
                 <h1><?php echo $name; ?></h1>
                 <h2>£<?php echo $price; ?></h2>
                 <img src='../Images/<?php echo $image; ?>' alt='<?php echo $name; ?>'>
                 <p><b><?php echo $description; ?></b></p>
                 <p>Stock:<?php echo $quantity; ?></p>
+                <button class='view' onclick=document.location='addToBasket.php?id=$id'>View Now</button>
             </form>
+
 
         </main>
     </div>
