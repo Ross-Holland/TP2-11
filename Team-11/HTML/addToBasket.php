@@ -16,16 +16,21 @@
         require_once('connect.php');
 
         $getID = "SELECT id FROM viewproduct";
+
         if (mysqli_query($conn, $getID)) {
             echo "Done";
         } else {
             echo "Error: " . mysqli_error($conn);
         } 
 
-        $cd = "SELECT id FROM products WHERE @getID := id";
+        $cd = "SELECT * FROM viewproduct LIMIT 1";
         $ty = $conn->query($cd);
-        $insert = "INSERT INTO cart (product_id) VALUES ('$ty')";
+        $row = mysqli_fetch_array($ty);
+        $row0 = $row[0];
+        $insert = "INSERT INTO cart (product_id) VALUES ('$row0')";
         $result2 = mysqli_query($conn, $insert);
+        $trun= "TRUNCATE TABLE viewproduct";
+        $delete2 = mysqli_query($conn, $trun);
 
         ?>
 

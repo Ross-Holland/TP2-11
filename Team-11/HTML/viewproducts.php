@@ -17,6 +17,9 @@
 
             require_once('connect.php');
 
+            $trun= "TRUNCATE TABLE viewproduct";
+            $delete2 = mysqli_query($conn, $trun);
+
             $viewDB = "INSERT INTO viewproduct(id) VALUES($id)";
             $result5 =  $conn->query($viewDB);
 
