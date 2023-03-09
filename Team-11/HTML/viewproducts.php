@@ -44,7 +44,8 @@
                 <img src='../Images/<?php echo $image; ?>' alt='<?php echo $name; ?>'>
                 <p><b><?php echo $description; ?></b></p>
                 <p>Stock:<?php echo $quantity; ?></p>
-                <button class='view' onclick=document.location='addToBasket.php?id=$id'>View Now</button>
+                <button class='view' formaction="addToBasket.php" onclick=document.location='addToBasket.php?id=$id'>Add to Basket</button>
+                <button class='view' formaction="addToWishlist.php" onclick=document.location='addToWishlist.php?id=$id'>Add to Wishlist</button>
             </form>
 
 
