@@ -4,6 +4,11 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once 'connect.php';
+
+$category = "";
+if (isset($_GET['category'])) {
+    $category = $_GET['category'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,223 +20,226 @@ require_once 'connect.php';
     <title>Product Page</title>
     <link rel = "stylesheet" href = "../CSS/productPage1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/womensproducts.css">
+
 </head>
 
 <body>
+<?php include('header.php');  ?>
 
-    <ul class="navbar">
-        <li><a href="">Home</a></li>
-
-        <li class="dropdown">
-            <a href="" class="dropbtn">Products</a>
-            <div class="dropdown-content">
-                <?php
-                include('connect.php');
-                $sql = "SELECT * FROM categories";
-                
-                    $result = $db->query($sql);
-
-                    // Process the query results
-                    if ($result->num_rows > 0) {
-                        // Output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo '<a href="">'.$row["category_title"].'</a>';
-                        }
-                    } else {
-                        echo "0 results";
-                    }
-                ?>
-            </div>
-        </li>
-   
-        <li><a href="">Contact</a></li>
-        <li><a href="">About</a></li>
-    </ul>
-
-    <div class = "wrapper">
-        <div class = "container">
+    <div class = "container">
+<main>
             <div class = "header">
-                <h1>Men's</h1>
+                <hr>
+                <h1>Shop Men's</h1>
+                <hr>
             </div>
+        
+    
+<?php if (!isset($_GET['category'])) { ?>
 
+<div class="category">
+    <div class="category">
+        <img src="../Images/menboots.jpg" alt="boots" />
+        <button class="centered" onclick="document.location='productPageMen.php?category=9'">Boots</button>
+    </div>
+    <div class="category">
+        <img src="../Images/HighTops.jpg" alt="high-tops" />
+        <button class="centered" onclick="document.location='productPageMen.php?category=10'">High Tops</button>
+    </div>
+    <div class="category">
+        <img src="../Images/Lows.jpg" alt="lows" />
+        <button class="centered" onclick="document.location='productPageMen.php?category=11'">Lows</button>
+    </div>
+    <div class="category">
+        <img src="../Images/trainersmen.jpg" alt="trainers" />
+        <button class="centered" onclick="document.location='productPageMen.php?category=4'">Trainers</button>
+    </div>
+    <div class="category">
+        <img src="../Images/menslippers.jpg" alt="slippers" />
+        <button class="centered" onclick="document.location='productPageMen.php?category=5'">Slippers</button>
+    </div>
+</div>
 
-            <div class="products">
-            <div class="product-container">
-                <?php
-                /*change the end id to change what products show (category_id)*/
-                    include('connect.php');
-                    $sql = "SELECT * FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id = '1'";
-                    $result = $db->query($sql);
-                /*fetches the products specified by each category from database*/
-                    if ($result->num_rows > 0) {
-                        while ($row = $result->fetch_assoc()) {
-                            $image = base64_encode($row['product_image']);
-                            $title = $row['product_title'];
-                            $price = $row['product_price'];
-                            echo '<div class="product-item">
-                                        <div class="product-img">
-                                        <img src="data:image/jpg;base64,'.$image.'">
-                                            <div>
-                                                <button type="button" class="cart-btn">Add to Cart</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="#" class="item-name">'.$title.'</a>
-                                            <span class="price">£ '.$price.'</span>
-                                            <div>
-                                                <ul class="rating">
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star"></i></li>
-                                                    <li><i class="fas fa-star-half-alt"></i></li>
-                                                    <li>(70 reviews)</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>';
+<?php } ?>
 
-                                }
-                            } else {
-                                echo "0 results";
-                            }
-                        ?>
+        <?php if (isset($_GET['category'])) { ?>
+            <button class="back"><a href="productPageMen.php">Browse other products</a></button>
+        <?php } ?>
+
+        
+                <?php 
+                
+                if (isset($_GET['category'])) {
+                    if ($category == '9') {
+                        $query = "SELECT * FROM products WHERE category=$category";
+                        $result = $conn->query($query);
                         
-                </div>
-            </div>
+
+    
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $name = $row['name'];
+                                $price = $row['price'];
+                                $image = $row['image'];
+                                $id = $row['id'];
+    
+                                echo "<div class='gallery'>
+                        <div class='products'>
+                            <img src='../Images/$image' alt='$name'>
+                            <h3>$name</h3>
+                            <h6>$price</h6>
+                            <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
+                        </div>
+                        </div>";
+                            }
+                        }
+                        }
+                        
+                    } 
+                            
+                        ?>
+
+                <?php 
+                
+                if (isset($_GET['category'])) {
+                    if ($category == '10') {
+                        $query = "SELECT * FROM products WHERE category=$category";
+                        $result = $conn->query($query);
+                        
+
+    
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $name = $row['name'];
+                                $price = $row['price'];
+                                $image = $row['image'];
+                                $id = $row['id'];
+    
+                                echo "<div class='gallery'>
+                        <div class='products'>
+                            <img src='../Images/$image' alt='$name'>
+                            <h3>$name</h3>
+                            <h6>$price</h6>
+                            <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
+                        </div>
+                        </div>";
+                            }
+                        }
+                        }
+                        
+                    } 
+                            
+                        ?>
+
+                <?php 
+                
+                if (isset($_GET['category'])) {
+                    if ($category == '11') {
+                        $query = "SELECT * FROM products WHERE category=$category";
+                        $result = $conn->query($query);
+                        
+
+    
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $name = $row['name'];
+                                $price = $row['price'];
+                                $image = $row['image'];
+                                $id = $row['id'];
+    
+                                echo "<div class='gallery'>
+                        <div class='products'>
+                            <img src='../Images/$image' alt='$name'>
+                            <h3>$name</h3>
+                            <h6>$price</h6>
+                            <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
+                        </div>
+                        </div>";
+                            }
+                        }
+                        }
+                        
+                    } 
+                            
+                        ?>
+
+                <?php 
+                
+                if (isset($_GET['category'])) {
+                    if ($category == '4') {
+                        $query = "SELECT * FROM products WHERE category=$category";
+                        $result = $conn->query($query);
+                        
+
+    
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $name = $row['name'];
+                                $price = $row['price'];
+                                $image = $row['image'];
+                                $id = $row['id'];
+    
+                                echo "<div class='gallery'>
+                        <div class='products'>
+                            <img src='../Images/$image' alt='$name'>
+                            <h3>$name</h3>
+                            <h6>$price</h6>
+                            <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
+                        </div>
+                        </div>";
+                            }
+                        }
+                        
+                        }
+                    } 
+                            
+                        ?>
+
+                <?php 
+                
+                if (isset($_GET['category'])) {
+                    if ($category == '5') {
+                        $query = "SELECT * FROM products WHERE category=$category";
+                        $result = $conn->query($query);
+                        
+
+    
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $name = $row['name'];
+                                $price = $row['price'];
+                                $image = $row['image'];
+                                $id = $row['id'];
+    
+                                echo "<div class='gallery'>
+                        <div class='products'>
+                            <img src='../Images/$image' alt='$name'>
+                            <h3>$name</h3>
+                            <h6>$price</h6>
+                            <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
+                        </div>
+                        </div>";
+                            }
+                            
+                        }
+                        
+                    }
+                    } 
+                            
+                        ?>
+                         
+                
+
         </div>
-    </div>
+            
+                    <main>
+        </body>
 
-
-</body>
-
+        
 </html>
-           
 
 
 
 
-<!--
-            <div class = "products">
-                <div class = "product-container">
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "img/airmax90.jpg">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Airmax 90</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(70 reviews)</li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Jordan 4</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(37 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Jordan 2</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(295 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "img/airmax.jpg">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Airforce 1</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(92 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "product-item">
-                        <div class = "product-img">
-                            <img src = "images/">
-                            <div>
-                                <button type = "button" class = "cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div class = "product-info">
-                            <a href = "#" class = "item-name">Dior b23</a>
-                            <span class = "price">£ 110</span>
-                            <div>
-                                <ul class = "rating">
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star"></i></li>
-                                    <li><i class = "fas fa-star-half-alt"></i></li>
-                                    <li>(84 reviews)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    -->     
