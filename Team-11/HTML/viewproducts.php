@@ -41,7 +41,7 @@
                 }
                 ?>
 
-                <form id="fulldetails" action="./addToBasket.php" method="POST">
+                <form id="fulldetails" method="POST">
 
                     <div class="fulldetails">
                         <div id="zoom">
