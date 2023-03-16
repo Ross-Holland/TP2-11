@@ -75,12 +75,13 @@
                         </select>
 
                         <div class="guide">
-                            <button type="submit" class="btn" onclick="openPopup()">Size guide</button>
+                            <!-- <button type="submit" class="btn" onclick="openPopup()">Size guide</button> -->
+                            <a class="btn" onclick="openPopup()">Size Guide</a>
                             <div class="popup" id="popup">
                                 <div class="popup-content">
                                     <h2>Size guide</h2>
                                     <img src="../images/sizeguide.jpg"> <br>
-                                    <button type="done" onclick="closePopup()">Done</button>
+                                    <a type="done" onclick="closePopup()">Done</a>
                                 </div>
                             </div>
                         </div>
