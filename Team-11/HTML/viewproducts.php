@@ -86,8 +86,8 @@
                         </div>
                         <br>
 
-                        <button class='view' formaction="addToBasket.php" onclick=document.location='addToBasket.php?id=$id'>Add to Basket</button>
-                        <button class='view' formaction="addToWishlist.php" onclick=document.location='addToWishlist.php?id=$id'>Add to Wishlist</button>
+                        <button class='basket' formaction="addToBasket.php" onclick=document.location='addToBasket.php?id=$id'>Add to Basket</button>
+                        <button class='wishlist' formaction="addToWishlist.php" onclick=document.location='addToWishlist.php?id=$id'>Add to Wishlist</button>
                 </form>
 
 
