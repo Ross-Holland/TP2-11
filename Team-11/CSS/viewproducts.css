@@ -1,3 +1,124 @@
-#fulldetails img{
-    width: 45%;
-}
+#fulldetails {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+  
+  .fulldetails {
+  width: 700px;
+    align-items: center;
+    text-align: left;
+  }
+  
+  #zoom{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+  
+  #featured {
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .thumbnail {
+    object-fit: cover;
+    width: 150px;
+    height: 110px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin: 5px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .thumbnail:hover {
+    opacity: 1;
+  }
+  
+  .active {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  select {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .btn {
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(245, 245, 245);
+    cursor: pointer;
+  }
+  
+  .popup {
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+  }
+  
+  .popup-content{
+    background-color: #fff;
+    width: 50%;
+    transform: translate(50%, 10%);
+  }
+  
+  .open-popup {
+    text-align: center;
+    visibility: visible;
+    top: 50%;
+    padding-top: 30px;
+  }
+  
+  .guide img {
+    width: 350px;
+  }
+  
+  .fulldetails .view {
+    color: #fff;
+    background: lightblue;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .fulldetails .wishlist {
+    color: lightblue;
+    background: rgb(240, 240, 240);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 7px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+  }
+  
+  

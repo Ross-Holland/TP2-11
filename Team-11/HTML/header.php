@@ -3,6 +3,7 @@
     <title>Step Correct</title>
     <link rel="icon" href="../Images/favicon.ico?v=2" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c54d8b2ca0.js" crossorigin="anonymous">
     </script>
     <script defer src="../JS/main.js"></script>
