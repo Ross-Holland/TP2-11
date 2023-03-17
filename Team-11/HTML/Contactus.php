@@ -74,7 +74,7 @@
         <script>
             function sendEmail() {
                 alert("Your email has been sent, thank you!");
-                location.href = "./";
+                location.href = "localhost/Team-11/HTML/ContactUs.php";
             }
         </script>
 
