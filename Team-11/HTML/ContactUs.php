@@ -18,39 +18,31 @@
                 <br>Feel free to get in touch.
             </p>
 
-            <div class="Contact-box">
-                <div class="contact-left">
-                    <h3>Send your request</h3>
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Name:</label>
-                                <input type="text" placeholder="John Smith" id="name-box">
-                            </div>
-                            <div class="input-group">
-                                <label>Phone:</label>
-                                <input type="text" placeholder="+44 1234 567890" id="phone-box">
-                            </div>
+            <div style="margin-left: 1em; margin: right 1em;">
 
-                        </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Email:</label>
-                                <input type="email" placeholder="JohnSmith@gmail.com" id="email-box">
-                            </div>
-                            <div class="input-group">
-                                <label>Subject:</label>
-                                <input type="text" placeholder="product problems" id="subject-box">
-                            </div>
-                        </div>
+                <form target = _blank" action="https://formsubmit.co/m.muzaffarali2001@gmail.com" method="POST">
 
-                        <label>Message</label>
-                        <textarea rows="5" placeholder="what would you like to know?" id="message-box"></textarea>
+                    <label for="name">Name:</label>
 
-                        <button type="submit" id="submit-button" onclick="sendEmail()">SEND</button>
+                    <input type="text" name="name" id="name" required>
 
-                    </form>
-                </div>
+                    <label for="email">Email:</label>
+
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="subject">Subject:</label>
+
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="message">Message</label>
+
+                    <textarea name="message" cols="30" rows="5" ></textarea>
+
+                    <input type="submit" value="Send" required>
+
+                </form>
+
+            </div>
 
                 <div class="contact-right">
                     <h3>How to Reach Us:</h3>
@@ -82,7 +74,7 @@
         <script>
             function sendEmail() {
                 alert("Your email has been sent, thank you!");
-                location.href = "./";
+                location.href = "localhost/Team-11/HTML/ContactUs.php";
             }
         </script>
 

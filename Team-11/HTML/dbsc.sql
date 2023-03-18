@@ -93,3 +93,31 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (11, 'Nike Metcon ', 'With a black and white colourway, these trainers provide a sleek look matching any outfit. They are tested for optimum running capabilities through the wide base which provides stability. A tough rubber outsole keeps the wearers feet gripped.\r\n \r\n- Colour: black and white \r\n- Material: textile & synthetic upper/synthetic sole \r\n- Textured overlays  \r\n- Breathable mesh ', 4, 15, 115, 'nikemetcon.jpg', 'nikemetcon1.jpg', 'nikemetcon2.jpg'),
 (12, 'Adidas Originals', 'With a retro runner style, look sleek and stylish while using these running trainers to achieve higher speeds. These trainers are lightweight and breathable, which is helpful in running more comfortably. Includes plush padding around the ankles. \r\n\r\n- Colour – white tint \r\n- Locked in finish \r\n- Cushioned step ', 4, 5, 100, 'adidasoriginalsw.jpg', 'adidasoriginalsw1.jpg', 'adidasoriginalsw2.jpg');
 
+
+
+---(test for java app thing)---- 
+--inserts tables--- 
+CREATE TABLE inventory (
+    item_name VARCHAR(255) PRIMARY KEY,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    description TEXT,
+    image_url VARCHAR(255),
+    in_stock BOOLEAN NOT NULL
+);
+
+CREATE TABLE incoming_orders (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    item_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    order_date DATE NOT NULL,
+    received BOOLEAN NOT NULL
+);
+
+CREATE TABLE outgoing_orders (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    item_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    order_date DATE NOT NULL,
+    shipped BOOLEAN NOT NULL
+);
