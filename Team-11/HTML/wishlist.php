@@ -38,7 +38,7 @@
                             $sql = "SELECT * FROM products WHERE id =".$row_wishlist["product_id"];
                             $all_products = $conn->query($sql);
                             while($row = mysqli_fetch_assoc($all_products)){
-                            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["quantity"]. "</td><td>" . $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitemw.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
+                            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>". $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitemw.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
                         }
                     }
                     } else {
