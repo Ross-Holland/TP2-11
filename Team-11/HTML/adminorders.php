@@ -111,12 +111,14 @@ include 'connect.php';
               <?php
                 $sql = "SELECT 	user_id, product_id, product_name, product_description, product_price, product_image, order_processed FROM orders";
                 $results = mysqli_query($conn, $sql);
-                if(mysqli_num_rows($results)>0){
-                    while($row = mysqli_fetch_array($results)){
+                if(mysqli_num_rows($results)>0) {
+                    while($row = mysqli_fetch_array($results)) {
                         $first = "SELECT user_firstname FROM users WHERE user_id == $row[0]";
+                        $firstr = mysqli_query($conn, $first);
                         $last = "SELECT user_lastname FROM users WHERE user_id == $row[0]";
-                  
-                        echo "Name: ", $first, " ", $last;
+                        $lastr = mysqli_query($conn, $last);
+
+                        echo "Name: ", $firstr, " ", $lastr;
                         echo "<br>";
                         echo "Product ID: ", $row[1];
                         echo "<br>";
