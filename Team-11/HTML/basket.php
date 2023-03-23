@@ -6,17 +6,49 @@
 </head>
 
 <body>
-    <?php include('header.php');
+    <?php 
+    include('header.php');
+    include('connect.php');
     ?>
 
     <div class="content">
         <main>
 
-            <div class="basket-message">
+            <div class="basket">
                 <hr>
                 <h1>Basket</h1>
                 <hr>
-                <p>Your basket is empty</p>
+                <h1>Basket</h1>
+                <table>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Item Quantity</th>
+                        <th>Item Price</th>
+                        <th>Item Image</th>
+                        <th>Remove</th>
+                    </tr>
+
+                    <?php
+                    $cart = "SELECT * FROM cart";
+                    $result = $conn->query($cart);
+
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row_cart = mysqli_fetch_assoc($result)){
+                            $sql = "SELECT * FROM products WHERE id =".$row_cart["product_id"];
+                            $all_products = $conn->query($sql);
+                            while($row = mysqli_fetch_assoc($all_products)){
+                            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["quantity"]. "</td><td>" . $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitem.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
+                        }
+                    }
+                    } else {
+                        echo "Nothing in basket";
+                    }
+                    
+                    ?>
+                </table>
+                
             </div>
 
             <section id="shopnow">

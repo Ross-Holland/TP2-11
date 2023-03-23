@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 44e46c5b6a2fe394b2bef5dca83e8fc44c989862
 <head>
     <?php
     include_once 'header.php';
@@ -18,6 +22,7 @@
                 <br>Feel free to get in touch.
             </p>
 
+<<<<<<< HEAD
             <div class="Contact-box">
                 <div class="contact-left">
                     <h3>Send your request</h3>
@@ -43,14 +48,39 @@
                                 <input type="text" placeholder="product problems" id="subject-box">
                             </div>
                         </div>
+=======
+            <div style="margin-left: 1em; margin: right 1em;">
+>>>>>>> 44e46c5b6a2fe394b2bef5dca83e8fc44c989862
 
                         <label>Message</label>
                         <textarea rows="5" placeholder="what would you like to know?" id="message-box"></textarea>
 
                         <button type="submit" id="submit-button" onclick="sendEmail()">SEND</button>
 
+<<<<<<< HEAD
                     </form>
                 </div>
+=======
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Email:</label>
+
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="subject">Subject:</label>
+
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="message">Message</label>
+
+                    <textarea name="message" cols="30" rows="5" ></textarea>
+
+                    <input type="submit" value="Send" required>
+
+                </form>
+
+            </div>
+>>>>>>> 44e46c5b6a2fe394b2bef5dca83e8fc44c989862
 
                 <div class="contact-right">
                     <h3>How to Reach Us:</h3>
@@ -82,7 +112,11 @@
         <script>
             function sendEmail() {
                 alert("Your email has been sent, thank you!");
+<<<<<<< HEAD
                 location.href = "./";
+=======
+                location.href = "localhost/Team-11/HTML/ContactUs.php";
+>>>>>>> 44e46c5b6a2fe394b2bef5dca83e8fc44c989862
             }
         </script>
 
@@ -93,4 +127,8 @@
 
 <?php
 include('footer.php');
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 44e46c5b6a2fe394b2bef5dca83e8fc44c989862
