@@ -23,7 +23,6 @@
                     <tr>
                         <th>Item ID</th>
                         <th>Item Name</th>
-                        <th>Item Quantity</th>
                         <th>Item Price</th>
                         <th>Item Image</th>
                         <th>Remove</th>
