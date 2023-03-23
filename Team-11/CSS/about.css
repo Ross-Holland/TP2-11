@@ -3,13 +3,7 @@ body {
     margin: 0;
     text-align: center;
   }
-  
-.background-image {
-    background-image: url('../Images/aboutus.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+   
   main {
     padding: 20px;
   }
