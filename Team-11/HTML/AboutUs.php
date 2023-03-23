@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<img src="../Images/about us.jpg" alt="background image">
+<img src="../Images/aboutus.jpg" alt="background image">
   <div class="content">
     <main>
       <h2>Our Story</h2>

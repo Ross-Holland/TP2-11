@@ -5,7 +5,7 @@ body {
   }
   
   body {
-    background-image: url('../Images/about us.jpg');
+    background-image: url(../Images/aboutus.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
