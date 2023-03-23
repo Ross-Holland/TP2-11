@@ -9,7 +9,9 @@
 </head>
 
 <body>
-<img src="../Images/aboutus.jpg" alt="background image">
+<div class="background-image">
+  <img src="../Images/aboutus.jpg" alt="background image">
+</div>
   <div class="content">
     <main>
       <h2>Our Story</h2>

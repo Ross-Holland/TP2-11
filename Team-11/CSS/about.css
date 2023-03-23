@@ -4,15 +4,11 @@ body {
     text-align: center;
   }
   
-  body {
-    background-image: url(../Images/aboutus.jpg);
+.background-image {
+    background-image: url('../Images/aboutus.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  img {
-    display: none;
-  }  
   
   main {
     padding: 20px;
