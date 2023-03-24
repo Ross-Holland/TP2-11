@@ -9,8 +9,7 @@
 <?php
 
 require 'connect.php';
-    
-
+session_start();
     
 if (isset($_POST['email'])) {
     $email = $_POST['email'];
@@ -22,7 +21,6 @@ if (isset($_POST['email'])) {
 
     if(mysqli_num_rows($result) > 0) {
         if ($password == $row["user_password"]) {
-            
             
             $_SESSION["user_id"] = $row["user_id"];
             if ($email == "admin@stepcorrect.com"){

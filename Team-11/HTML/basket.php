@@ -15,9 +15,6 @@
         <main>
 
             <div class="basket">
-                <hr>
-                <h1>Basket</h1>
-                <hr>
                 <h1>Basket</h1>
                 <table>
                     <tr>
@@ -39,6 +36,9 @@
                             $all_products = $conn->query($sql);
                             while($row = mysqli_fetch_assoc($all_products)){
                             echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitem.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
+                        ?>
+                            <button name ="order" onclick="location.href='orderbutton.php';">Order Now!</button>
+                        <?php
                         }
                     }
                     } else {
@@ -53,7 +53,7 @@
             <section id="shopnow">
                 <div class="shopnow">
                     <img src="../Images/shopwomens.jpg" alt="womens" />
-                    <div class="centered"><a href="../HTML/productPage.php"><button class="btn">Shop Now</button></a></div>
+                    <div class="centered"><a href="../HTML/womens.php"><button class="btn">Shop Now</button></a></div>
                 </div>
                 <div class="shopnow">
                     <img src="../Images/shopmens.jpg" alt="mens" />
