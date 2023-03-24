@@ -40,7 +40,7 @@ body {
   width: 125px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 950px) {
   .topnav-centre a {
     display: none;
   }

@@ -46,7 +46,7 @@ if (isset($_GET['category'])) {
                     </div>
                     <div class="category">
                         <img src="../Images/slippers-w.jpg" alt="slippers" />
-                        <button class="centered" onclick="document.location='womens.php?category=5'">Slippers</button>
+                        <button class="centered" onclick="document.location='womens.php?category=5'">Sandals</button>
                     </div>
                 </div>
 
