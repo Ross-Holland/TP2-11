@@ -36,9 +36,7 @@
                             $all_products = $conn->query($sql);
                             while($row = mysqli_fetch_assoc($all_products)){
                             echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitem.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
-                        ?>
-                            <button name ="order" onclick="location.href='orderbutton.php';">Order Now!</button>
-                        <?php
+                    
                         }
                     }
                     } else {
@@ -48,6 +46,8 @@
                     ?>
                 </table>
                 
+                    <button name ="order" onclick="location.href='orderbutton.php';">Order Now!</button>
+                        
             </div>
 
             <section id="shopnow">
