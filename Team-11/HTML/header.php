@@ -28,9 +28,10 @@
         </div>
 
         <div class="topnav-right">
-            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="../HTML/search.php"><i class="fa fa-search"></i></a>
             <a href="../HTML/wishlist.php"><i class="fa fa-heart-o"></i></a>
             <a href="../HTML/basket.php"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
             <a href="logout.php">Logout</a>
         </div>
 
