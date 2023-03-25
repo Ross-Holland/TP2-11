@@ -45,7 +45,7 @@ if (isset($_GET['category'])) {
                         <button class="centered" onclick="document.location='womens.php?category=4'">Trainers</button>
                     </div>
                     <div class="category">
-                        <img src="../Images/slippers-w.jpg" alt="slippers" />
+                        <img src="../Images/sandals-w.jpg" alt="sandals" />
                         <button class="centered" onclick="document.location='womens.php?category=5'">Sandals</button>
                     </div>
                 </div>
@@ -54,9 +54,8 @@ if (isset($_GET['category'])) {
 
 
             <?php if (isset($_GET['category'])) { ?>
-                <button class="back"><a href="womens.php">Browse other products</a></button>
+                <button class=" back" onclick="history.back()">Browse other products</button>
             <?php } ?>
-
 
 
             <?php
