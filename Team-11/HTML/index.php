@@ -1,9 +1,9 @@
 <?php 
 session_start();
 require "connect.php";
-if(isset($_SESSION["user_id"])) {
-  header("Location:index.php");
-}
+// if(isset($_SESSION["user_id"])) {
+//   header("Location:index.php");
+// }
 ?>
 <!DOCTYPE html>
 <!---Coding By S Ajayi | Aston University--->
@@ -55,7 +55,7 @@ if(isset($_SESSION["user_id"])) {
   </div>
 </body>
 </html>
-<?php 
+<!-- <?php 
     if(isset($_SESSION["user_id"])) {
         $id = $_SESSION["user_id"];
         $sql = "SELECT email FROM user WHERE email = '$email'";
@@ -63,7 +63,7 @@ if(isset($_SESSION["user_id"])) {
         $row = mysqli_fetch_assoc($result);
         $name = $row['firstname'];
     }
-?>
+?> -->
 <?php
 
 if (isset($_POST['submit'])) {

@@ -26,7 +26,7 @@ CREATE TABLE `user` (
 CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `category` int (5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `quantity` int(5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `price` int(10) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -60,6 +60,8 @@ ALTER TABLE `categories`
 ALTER TABLE `user`
   MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
+ALTER TABLE `orders` 
+  ADD `date` VARCHAR(20) NOT NULL AFTER `product_image`;
 --block 2 end--
 --block 3--
 CREATE TABLE `cart` (

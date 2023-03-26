@@ -44,10 +44,11 @@
                     }
                     
                     ?>
+                    
                 </table>
-                
-                    <button name ="order" onclick="location.href='orderbutton.php';">Order Now!</button>
-                        
+
+                <button name ="order" onclick="window.location.href='orderbutton.php';">Order Now!</button>
+                       
             </div>
 
             <section id="shopnow">

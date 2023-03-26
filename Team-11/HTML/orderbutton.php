@@ -15,8 +15,9 @@ if ($result->num_rows > 0) {
             $product_desc = $row['description'];
             $product_price = $row['price'];
             $product_image = $row['image'];
+            $date = date('d-m-Y');
 
-            $sql1 = "INSERT INTO orders (user_id, product_id, product_name, product_description, product_price, product_image, order_processed) VALUES ('$user_id', '$product_id', '$product_name', '$product_desc', '$product_price', '$product_image', '0')";
+            $sql1 = "INSERT INTO orders (user_id, product_id, product_name, product_description, product_price, product_image, date, order_processed) VALUES ('$user_id', '$product_id', '$product_name', '$product_desc', '$product_price', '$product_image', '$date', '0')";
             mysqli_query($conn, $sql1);
         }
     }
