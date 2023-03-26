@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <?php 
+    <?php
     include('header.php');
     include('connect.php');
     ?>
@@ -15,55 +15,63 @@
         <main>
 
             <div class="basket">
+                <hr>
                 <h1>Basket</h1>
-                <table>
-                    <tr>
-                        <th>Item ID</th>
-                        <th>Item Name</th>
-                        <th>Item Price</th>
-                        <th>Item Image</th>
-                        <th>Remove</th>
-                    </tr>
+                <hr>
 
-                    <?php
-                    $cart = "SELECT * FROM cart";
-                    $result = $conn->query($cart);
+                <?php
+                $cart = "SELECT * FROM cart";
+                $result = $conn->query($cart);
 
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row_cart = mysqli_fetch_assoc($result)){
-                            $sql = "SELECT * FROM products WHERE id =".$row_cart["product_id"];
-                            $all_products = $conn->query($sql);
-                            while($row = mysqli_fetch_assoc($all_products)){
-                            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["price"]. "</td><td>" . $row["image"]. "</td><td> <form method='post' action='removeitem.php'><input type='hidden' name='id' value='" . $row["id"]. "'><button type='submit'>Remove</button></form></td></tr>";
-                    
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while ($row_cart = mysqli_fetch_assoc($result)) {
+                        $sql = "SELECT * FROM products WHERE id =" . $row_cart["product_id"];
+                        $all_products = $conn->query($sql);
+                        while ($row = mysqli_fetch_assoc($all_products)) {
+                            $name = $row['name'];
+                            $price = $row['price'];
+                            $image = $row['image'];
+                            $id = $row['id'];
+
+                            echo " <div class='gallery'>
+                            <div class='products'>
+                                <img src='../Images/$image' alt='$name'>
+                                <h3>$name</h3>
+                                <h6>£$price</h6>
+                                <form method='post' action='removeitem.php'><input type='hidden' name='id' value='" . $id . "'><button class= 'remove' type='submit'>Remove</button></form>
+                                </div>
+                        </div>";
                         }
                     }
-                    } else {
-                        echo "Nothing in basket";
-                    }
-                    
-                    ?>
-
-                </table>
-                <?php
-                if ($result->num_rows > 0){
-                    ?> <button name="order" onclick="window.location.href='orderbutton.php';">Order Now!</button> <?php
-                }
+                } else {
+                    echo "Nothing in basket";
                 ?>
-            </div>
 
-            <section id="shopnow">
-                <div class="shopnow">
-                    <img src="../Images/shopwomens.jpg" alt="womens" />
-                    <div class="centered"><a href="../HTML/womens.php"><button class="btn">Shop Now</button></a></div>
-                </div>
-                <div class="shopnow">
-                    <img src="../Images/shopmens.jpg" alt="mens" />
-                    <div class="centered"><a href="../HTML/productPageMen.php"><button class="btn">Shop Now</button></a>
-                    </div>
-                </div>
-            </section>
+                    <h4>Explore Now...</h4>
+
+                    <section id="shopnow">
+                        <div class="shopnow">
+                            <img src="../Images/shopwomens.jpg" alt="womens" />
+                            <div class="centered"><a href="../HTML/productPage.php"><button class="btn">Shop Now</button></a></div>
+                        </div>
+                        <div class="shopnow">
+                            <img src="../Images/shopmens.jpg" alt="mens" />
+                            <div class="centered"><a href="../HTML/productPageMen.php"><button class="btn">Shop Now</button></a></div>
+                        </div>
+                    </section>
+                <?php
+                }
+
+                ?>
+<br>
+
+                <?php
+                if ($result->num_rows > 0) {
+                ?> <button class="order" name="order" onclick="window.location.href='orderbutton.php';">Order Now!</button> <?php
+                                                                                                                }
+                                                                                                                    ?>
+            </div>
 
 
         </main>
