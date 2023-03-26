@@ -46,6 +46,11 @@
                     
                     ?>
                 </table>
+                <?php
+                if ($result->num_rows > 0){
+                    ?> <button name="move" onclick="window.location.href='movetobasket.php';">Add to Basket!</button> <?php
+                }
+                ?>
             </div>
 
             <br>

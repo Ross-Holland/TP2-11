@@ -19,14 +19,15 @@ if ($result->num_rows > 0) {
 
             $sql1 = "INSERT INTO orders (user_id, product_id, product_name, product_description, product_price, product_image, date, order_processed) VALUES ('$user_id', '$product_id', '$product_name', '$product_desc', '$product_price', '$product_image', '$date', '0')";
             mysqli_query($conn, $sql1);
+
+            
         }
     }
-} else {
-    echo "<script> alert(\"Nothing in basket\") </script>";
 }
 
 $sql = "TRUNCATE TABLE cart";
 mysqli_query($conn, $sql);
 
-header('Location: basket.php');
+echo "<script> alert(\"Your items have been ordered, they are now being processed!\") </script>";
+echo "<script>setTimeout(function(){ window.location.href = 'basket.php'; }, 2);</script>";
 ?>
