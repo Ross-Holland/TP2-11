@@ -44,11 +44,13 @@
                     }
                     
                     ?>
-                    
-                </table>
 
-                <button name ="order" onclick="window.location.href='orderbutton.php';">Order Now!</button>
-                       
+                </table>
+                <?php
+                if ($result->num_rows > 0){
+                    ?> <button name="order" onclick="window.location.href='orderbutton.php';">Order Now!</button> <?php
+                }
+                ?>
             </div>
 
             <section id="shopnow">
@@ -58,7 +60,8 @@
                 </div>
                 <div class="shopnow">
                     <img src="../Images/shopmens.jpg" alt="mens" />
-                    <div class="centered"><a href="../HTML/productPageMen.php"><button class="btn">Shop Now</button></a></div>
+                    <div class="centered"><a href="../HTML/productPageMen.php"><button class="btn">Shop Now</button></a>
+                    </div>
                 </div>
             </section>
 
