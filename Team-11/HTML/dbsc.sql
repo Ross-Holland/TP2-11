@@ -60,8 +60,6 @@ ALTER TABLE `categories`
 ALTER TABLE `user`
   MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
-ALTER TABLE `orders` 
-  ADD `date` VARCHAR(20) NOT NULL AFTER `product_image`;
 --block 2 end--
 --block 3--
 CREATE TABLE `cart` (
@@ -82,6 +80,7 @@ CREATE TABLE `orders` (
   `product_description` varchar(500),
   `product_price` varchar(500),
   `product_image` varchar(500),
+  `date` varchar(20),
   `order_processed` BOOLEAN
 );
 --block 4 end--
