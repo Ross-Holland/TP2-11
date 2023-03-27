@@ -15,8 +15,11 @@
     ?>
     <div class="content">
         <div class="colorContainer">
-            <div class="homepageText , bold">
-                <p1>Products Trending Now!</p1>
+          
+                 <div class="BESTSELLING" class="item">
+                                 <div class="homepageText , bold">
+      <img src= "/shared-files/home-images/product1.png" alt="hers" style="width:80%">
+      <div class="f-text2"><p1>Trends</p1>
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
