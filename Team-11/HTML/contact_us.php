@@ -25,7 +25,7 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name:</label>
-                                <input type="text" placeholder="John Sm  ith" id="name-box">
+                                <input type="text" placeholder="John Smith" id="name-box">
                             </div>
                             <div class="input-group">
                                 <label>Phone:</label>
