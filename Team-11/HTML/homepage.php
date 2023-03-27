@@ -13,71 +13,11 @@
     <?php
     include_once "header.php";
     ?>
-    <div class="content">
-        <div class="colorContainer">
-          
-                 <div class="BESTSELLING" class="item">
-                                 <div class="homepageText , bold">
-      <img src= "/shared-files/home-images/product1.png" alt="hers" style="width:80%">
-      <div class="f-text2"><p1>Trends</p1>
-            </div>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="../images/Airmax-90.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/Ultraboost.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/Airmax-97.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/NMD-R1.jpg" style="width:100% height:20%" alt="images">
-                </div>
-
-            </div>
-
-            <div class="homepageText">
-                <p1>
-                    Welcome to Step Correct -
-                    We are an online retailer
-                    <br>
-                    selling a variety of shoes and trainers.
-                    <br>
-                    <br>
-                    Please use the navigation bar above to look around.
-                    <br>
-                    If you have any feedback for us, please let us know.
-                    <br>
-                    <br>
-                    Enjoy your shop!
-                </p1>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000);
-    }
-</script>
-
+    <div class="BESTSELLING1" class="item">
+      <img src="../images/Airmax-90.jpg" alt="hers" style="width:80%">
+      <div class="f-text2">
+       
+   
 <?php
 include('footer.php');
 ?>
