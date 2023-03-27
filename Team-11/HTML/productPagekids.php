@@ -41,23 +41,23 @@ if (isset($_GET['category'])) {
 <div class="category">
     <div class="category">
         <img src="../Images/kidsboots.jpg" alt="boots" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=12'">Kids Boots</button>
+        <button class="centered" onclick="document.location='productPagekids.php?category=12'">Kids Boots</button>
     </div>
     <div class="category">
         <img src="../Images/kidshightops.jpg" alt="high-tops" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=13'">High Tops</button>
+        <button class="centered" onclick="document.location='productPagekids.php?category=13'">High Tops</button>
     </div>
     <div class="category">
         <img src="../Images/kidsmartshoe.jpg" alt="kidsmartshoe" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=14'">smart shoes</button>
+        <button class="centered" onclick="document.location='productPagekids.php?category=14'">smart shoes</button>
     </div>
     <div class="category">
         <img src="../Images/trainerskids.jpg" alt="trainers" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=15'">Trainers</button>
+        <button class="centered" onclick="document.location='productPagekids.php?category=15'">Trainers</button>
     </div>
     <div class="category">
         <img src="../Images/slipperskid.jpg" alt="slippers" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=16'">Slippers</button>
+        <button class="centered" onclick="document.location='productPagekids.php?category=16'">Slippers</button>
     </div>
 </div>
 
