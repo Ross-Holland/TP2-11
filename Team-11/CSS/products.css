@@ -77,3 +77,10 @@ h6 {
     width: 95%;
   }
 }
+
+.filter {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 40px;
+  border: 2px solid lightblue;
+}
