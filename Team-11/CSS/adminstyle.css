@@ -80,6 +80,36 @@
   left: 240px;
   transition: all 0.5s ease;
 }
+.home-section.sales-boxes.recent-salesbox.table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+}
+
+.home-section.sales-boxes.recent-salesbox.th,
+.home-section.sales-boxes.recent-salesbox.td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid lightgray;
+}
+
+.home-section.sales-boxes.recent-salesbox.tr:nth-child(even) {
+  background-color: white;
+}
+
+.home-section.sales-boxes.recent-salesbox.th {
+  background-color: lightblue;
+  color: black;
+}
+
+.home-section.sales-boxes.recent-salesbox.h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .sidebar.active ~ .home-section{
   width: calc(100% - 60px);
   left: 60px;
