@@ -167,7 +167,7 @@ if (isset($_GET['category'])) {
                 <?php 
                 
                 if (isset($_GET['category'])) {
-                    if ($category == '4') {
+                    if ($category == '13') {
                         $query = "SELECT * FROM products WHERE category=$category";
                         $result = $conn->query($query);
                         
