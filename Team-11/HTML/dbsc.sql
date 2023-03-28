@@ -127,6 +127,12 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (42, 'Caterpillar Mens Stickshift Work Boots Black', 'Caterpillar Mens boots designed for luxury and work. They offer ankle support and comforting insoles for design and experience.', 9, 0, 45.99, 'Caterpillar Mens Stickshift Work Boots Black.jpg', 'Caterpillar Mens Stickshift Work Boots Black 1.jpg', 'Caterpillar Mens Stickshift Work Boots Black 2.jpg');
 
 
+INSERT INTO `categories` (`category_id`, `category_title`) VALUES
+(1, 'Womens-boots'),
+(2, 'Womens-heels'),
+(3, 'Womens-flats'),
+(4, 'Womens/mens-trainers'),
+(5, 'Womens-slippers');
 
 ---(test for java app thing)---- 
 --inserts tables--- 

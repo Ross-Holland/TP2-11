@@ -20,7 +20,7 @@ if (isset($_GET['category'])) {
     <title>Product Page</title>
     <link rel = "stylesheet" href = "../CSS/productPage1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../CSS/womensproducts.css">
+    <link rel="stylesheet" href="../CSS/products.css">
 
 </head>
 
@@ -53,7 +53,7 @@ if (isset($_GET['category'])) {
     </div>
     <div class="category">
         <img src="../Images/trainersmen.jpg" alt="trainers" />
-        <button class="centered" onclick="document.location='productPageMen.php?category=12'">Trainers</button>
+        <button class="centered" onclick="document.location='productPageMen.php?category=4'">Trainers</button>
     </div>
     <div class="category">
         <img src="../Images/menslippers.jpg" alt="slippers" />

@@ -12,7 +12,7 @@ if (isset($_GET['category'])) {
 
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/womens.css" />
-    <link rel="stylesheet" href="../CSS/womensproducts.css">
+    <link rel="stylesheet" href="../CSS/products.css">
 </head>
 
 <body>
