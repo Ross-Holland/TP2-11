@@ -88,7 +88,7 @@ if (isset($_GET['category'])) {
                         <div class='products'>
                             <img src='../Images/$image' alt='$name'>
                             <h3>$name</h3>
-                            <h6>$price</h6>
+                            <h6>£$price</h6>
                             <button class='view' onclick=document.location='viewproducts.php?id=$id'>View Now</button>
                         </div>
                         </div>";

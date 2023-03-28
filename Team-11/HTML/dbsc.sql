@@ -119,8 +119,12 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (34, 'Leopard Print Sliders', '', 5, 0, 29.99, 'leapordslides.jpg', 'leapordslides1.jpg', 'leapordslides2.jpg'),
 (35, 'Pink crocs', '', 5, 0, 35.99, 'pinkcrocs.jpg', 'pinkcrocs1.jpg', 'pinkcrocs2.jpg'),
 (36, 'Leather-Look Sandals', '', 5, 0, 25.99, 'leathersandals.jpg', 'leathersandals1.jpg', 'leathersandals2.jpg'),
-(37, 'Khaki sandals\r\n', '', 5, 0, 60.99, 'khakisandals.jpg', 'khakisandals1.jpg', 'khakisandals2.jpg');
-(38, '883 Polic Mens Boots', 'Leather and Synthetic upper boots, combined with a Textile and Synthetic lining to create a comfortable yet reliabe boot for men. The laces are strong and durable and come with a 1 year guarantee.', 9, 0, 29.99, '833 Police Mnes Case Boots Black.jpg', '833 Police Mnes Case Boots Black 1.jpg','833 Police Mnes Case Boots Black 2.jpg');
+(37, 'Khaki sandals\r\n', '', 5, 0, 60.99, 'khakisandals.jpg', 'khakisandals1.jpg', 'khakisandals2.jpg'),
+(38, '883 Police Mens Boots', 'Leather and Synthetic upper boots, combined with a Textile and Synthetic lining to create a comfortable yet reliabe boot for men. The laces are strong and durable and come with a 1 year guarantee.', 9, 0, 29.99, '883 Police Mnes Case Boots Black.jpg', '883 Police Mnes Case Boots Black 1.jpg','883 Police Mnes Case Boots Black 2.jpg'),
+(39, 'Ben Sherman Mens Hugo Suede Chelsea Brown Boots', 'Suede Brown Chelsea boots designed for walking and comfort as well as allowing for a stylish appearence. They have a rubber sole and a heel pull for ease of use.', 9, 0, 24.99, 'Ben Sherman Mens Hugo Suede Chelsea Boots Brown.jpg', 'Ben Sherman Mens Hugo Suede Chelsea Boots Brown 1.jpg', 'Ben Sherman Mens Hugo Suede Chelsea Boots Brown 2.jpg'),
+(40, 'Timberland Mens Field Trekker Mid Boots Black', 'Fully branded Timberland boots with ankle support. Designed for hiking in style. Comes with a soft textile lining and lace fastening ability.', 9, 0, 69.99, 'Timberland Mens Field Trekker Mid Boots Black.jpg', 'Timberland Mens Field Trekker Mid Boots Black 1.jpg', 'Timberland Mens Field Trekker Mid Boots Black 2.jpg'),
+(41, 'Deakins Mens Oxford Boots Tan', 'Tan lace up Deakins with heel support designed for luxury and support.', 9, 0, 30.00, 'Deakins Mens Oxford Boots Tan.jpg', 'Deakins Mens Oxford Boots Tan 1.jpg', 'Deakins Mens Oxford Boots Tan 2.jpg'),
+(42, 'Caterpillar Mens Stickshift Work Boots Black', 'Caterpillar Mens boots designed for luxury and work. They offer ankle support and comforting insoles for design and experience.', 9, 0, 45.99, 'Caterpillar Mens Stickshift Work Boots Black.jpg', 'Caterpillar Mens Stickshift Work Boots Black 1.jpg', 'Caterpillar Mens Stickshift Work Boots Black 2.jpg');
 
 
 
