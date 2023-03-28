@@ -23,16 +23,12 @@
                 
                 $cart = "SELECT * FROM cart";
                 $result = $conn->query($cart);
-                // $sizecart = "SELECT * FROM cart";
-                // $result1 = $conn->query($sizecart);
-                // $rowsize = mysqli_fetch_assoc($result1);
+                
                 if ($result->num_rows > 0) {
                     // output data of each row
                     while ($row_cart = mysqli_fetch_assoc($result)) {
                         $sql = "SELECT * FROM products WHERE id =" . $row_cart["product_id"];
                         $all_products = $conn->query($sql);
-                        // $sql1 = "SELECT size FROM cart";
-                        // $all_size = $conn->query($sql1);
                         while ($row = mysqli_fetch_assoc($all_products)) {
                             
                             $name = $row['name'];
