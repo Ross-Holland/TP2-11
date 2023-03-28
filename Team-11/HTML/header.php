@@ -24,7 +24,7 @@
             <a href="../HTML/productPageMen.php">Mens</a>
             <a href="../HTML/productPagekids.php">Kids</a>
             <a href="../HTML/AboutUs.php">About</a>
-            <a href="../HTML/ContactUs.php">Contact Us</a>
+            <a href="../HTML/Contact_Us.php">Contact Us</a>
         </div>
 
         <div class="topnav-right">

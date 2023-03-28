@@ -63,10 +63,12 @@ COMMIT;
 --block 2 end--
 --block 3--
 CREATE TABLE `cart` (
-  `product_id` varchar(255)
+  `product_id` varchar(255),
+  `size` varchar(10)
 );
 CREATE TABLE `wishlist` (
-  `product_id` varchar(255)
+  `product_id` varchar(255),
+  `size` varchar (10)
 );
 CREATE TABLE `viewproduct` (
   `id` varchar(255)
@@ -80,6 +82,7 @@ CREATE TABLE `orders` (
   `product_description` varchar(500),
   `product_price` varchar(500),
   `product_image` varchar(500),
+  `size` varchar(10),
   `date` varchar(20),
   `order_processed` BOOLEAN
 );

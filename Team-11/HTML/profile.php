@@ -20,6 +20,7 @@
                     <th>Product description</th>
                     <th>Price</th>
                     <th>Image</th>
+                    <th>Size</th>
                     <th>Date</th>
                     <th>Order Status</th>
                 </tr>
@@ -38,6 +39,7 @@
                     echo "<td>" . $row['product_description'] . "</td>";
                     echo "<td>" . $row['product_price'] . "</td>";
                     echo "<td>" . $row['product_image'] . "</td>";
+                    echo "<td>" . $row['size'] . "</td>";
                     echo "<td>" . $row['date'] . "</td>";
                     if ($row['order_processed'] == '0') {
                         echo "<td>" . 'Order Processing' . "</td>";

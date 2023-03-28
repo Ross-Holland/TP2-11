@@ -16,7 +16,7 @@
         require_once('connect.php');
 
         $getID = "SELECT id FROM viewproduct";
-
+        $sizeoption = $_POST['size'];
         if (mysqli_query($conn, $getID)) {
             echo  "<script> alert('Product has been added to wishlist'); </script>";
         } else {
@@ -27,7 +27,7 @@
         $ty = $conn->query($cd);
         $row = mysqli_fetch_array($ty);
         $row0 = $row[0];
-        $insert = "INSERT INTO wishlist (product_id) VALUES ('$row0')";
+        $insert = "INSERT INTO wishlist (product_id, size) VALUES ('$row0', '$sizeoption')";
         $result2 = mysqli_query($conn, $insert);
         $trun= "TRUNCATE TABLE viewproduct";
         $delete2 = mysqli_query($conn, $trun);

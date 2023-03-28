@@ -33,14 +33,16 @@
                             $price = $row['price'];
                             $image = $row['image'];
                             $id = $row['id'];
+                            $size = $row_wishlist['size'];
 
                             echo " <div class='gallery'>
                         <div class='products'>
                             <img src='../Images/$image' alt='$name'>
                             <h3>$name</h3>
+                            <h3>$size</h3>
                             <h6>£$price</h6>
-                            <form method='post' action='removeitemw.php'><input type='hidden' name='id' value='" . $id . "'><button class= 'remove' type='submit'>Remove</button></form>
-                            <button name='move' onclick='window.location.href='movetobasket.php';'>Add to Basket!</button>
+                            <form method='post' action='removeitemw.php'><input type='hidden' name='id' value='" . $id . "'><button class= 'remove' type='submit'>Remove</button></form> 
+                            <button onclick=\"window.location.href = 'movetobasket.php';\">Add to Basket!</button>
                             </div>
                     </div>";
                         }

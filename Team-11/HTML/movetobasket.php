@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-$sql1 = "INSERT INTO cart (product_id) SELECT product_id FROM wishlist";
+$sql1 = "INSERT INTO cart (product_id,size) SELECT product_id, size FROM wishlist";
 mysqli_query($conn, $sql1);
 
 $sql = "TRUNCATE TABLE wishlist";
