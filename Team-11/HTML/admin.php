@@ -82,37 +82,37 @@ include 'connect.php';
         <div class="sales-boxes">
             <div class="recent-salesbox">
                 <div class="title">Users</div>
-                        <table>
-                            <tr>
-                                <th>User ID</th>
-                                <th>Firstname</th>
-                                <th>Lastname</th>
-                                <th>Email address</th>
-                                <th>Address</th>
-                                <th>Telephone number</th>
-                                <th></th>
-                            </tr>
-                            <?php
-                $sql = "SELECT user_id, user_firstname, user_lastname, user_email, user_address, telephone_number FROM user";
-                $results = mysqli_query($conn, $sql);
-                if(mysqli_num_rows($results)>0){
-                  while($row = mysqli_fetch_array($results)){
-                    echo "<tr>";
-                    echo "<td>" . $row['user_id'] . "</td>";
-                    echo "<td>" . $row['user_firstname'] . "</td>";
-                    echo "<td>" . $row['user_lastname'] . "</td>";
-                    echo "<td>" . $row['user_email'] . "</td>";
-                    echo "<td>" . $row['user_address'] . "</td>";
-                    echo "<td>" . $row['telephone_number'] . "</td>";
-                    echo "<td> <a href='edituser.php?id=" . $row['user_id'] . "'>Edit User</a> </td>";
-                }
-              } else {
-                echo "<script> alert(\"There are no Users\") </script>";
-                }
-              ?>
-
-                </div>
-                <script>
+                <table>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email address</th>
+                        <th>Address</th>
+                        <th>Telephone number</th>
+                        <th></th>
+                    </tr>
+                    <?php
+                    $sql = "SELECT user_id, user_firstname, user_lastname, user_email, user_address, telephone_number FROM user";
+                    $results = mysqli_query($conn, $sql);
+                    if (mysqli_num_rows($results) > 0) {
+                        while ($row = mysqli_fetch_array($results)) {
+                            echo "<tr>";
+                            echo "<td>" . $row['user_id'] . "</td>";
+                            echo "<td>" . $row['user_firstname'] . "</td>";
+                            echo "<td>" . $row['user_lastname'] . "</td>";
+                            echo "<td>" . $row['user_email'] . "</td>";
+                            echo "<td>" . $row['user_address'] . "</td>";
+                            echo "<td>" . $row['telephone_number'] . "</td>";
+                            echo "<td> <a href='edituser.php?id=" . $row['user_id'] . "'>Edit User</a> </td>";
+                        }
+                    } else {
+                        echo "<script> alert(\"There are no Users\") </script>";
+                    }
+                    ?>
+                </table>
+            </div>
+            <script>
                 let sidebar = document.querySelector(".sidebar");
                 let sidebarBtn = document.querySelector(".sidebarBtn");
                 sidebarBtn.onclick = function() {
@@ -122,7 +122,7 @@ include 'connect.php';
                     } else
                         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
                 }
-                </script>
+            </script>
 
 </body>
 
