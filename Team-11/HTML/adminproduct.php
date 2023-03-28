@@ -59,49 +59,15 @@ include 'connect.php';
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="users">Users</span>
+        <span class="products">Products</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
         <i class='bx bx-search' ></i>
       </div>
-      <div class="profile-details">
-        <span class="admin_name">Admin</span>
-        <i class='bx bx-chevron-down' ></i>
-      </div>
     </nav>
 
     <div class="home-content">
-      <div class="overview-boxes">
-        <div class="box">
-          <div class="right-side">
-            <!-- <div class="box-topic">Total Order</div>
-            <div class="number">£</div> -->
-          </div>
-          <i class='bx bx-cart-alt cart'></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <!-- <div class="box-topic">Total Sales</div>
-            <div class="number">£</div> -->
-          </div>
-          <i class='bx bxs-cart-add cart two' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <!-- <div class="box-topic">Total Profit</div>
-            <div class="number">£</div> -->
-          </div>
-          <i class='bx bx-cart cart three' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <!-- <div class="box-topic">Total Return</div>
-            <div class="number">£</div> -->
-          </div>
-          <i class='bx bxs-cart-download cart four' ></i>
-        </div>
-      </div>
 
       <div class="sales-boxes">
         <div class="recent-sales box">
@@ -124,7 +90,7 @@ include 'connect.php';
                       echo "<br>";
                       echo "price: ", $row[4];
                       echo "<br>";
-                      echo "Image: ", "<img src='$row[5]' alt='Image'>";
+                      echo "<img src='../images/$row[5]' alt='$row[1]'>";
                       echo "<br>";
                       echo "Category: ". $row[6];
                       echo "<br>";
@@ -136,9 +102,6 @@ include 'connect.php';
                   echo "<script> alert(\"There are no Products\") </script>";
                 }
               ?>
-          </div>
-          <div class="button">
-            <a href="#">See All</a>
           </div>
         </div>
   <script>
