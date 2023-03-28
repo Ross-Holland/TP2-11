@@ -120,6 +120,7 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (35, 'Pink crocs', '', 5, 0, 35.99, 'pinkcrocs.jpg', 'pinkcrocs1.jpg', 'pinkcrocs2.jpg'),
 (36, 'Leather-Look Sandals', '', 5, 0, 25.99, 'leathersandals.jpg', 'leathersandals1.jpg', 'leathersandals2.jpg'),
 (37, 'Khaki sandals\r\n', '', 5, 0, 60.99, 'khakisandals.jpg', 'khakisandals1.jpg', 'khakisandals2.jpg');
+(38, '883 Polic Mens Boots', 'Leather and Synthetic upper boots, combined with a Textile and Synthetic lining to create a comfortable yet reliabe boot for men. The laces are strong and durable and come with a 1 year guarantee.', 9, 0, 29.99, '833 Police Mnes Case Boots Black.jpg', '833 Police Mnes Case Boots Black 1.jpg','833 Police Mnes Case Boots Black 2.jpg');
 
 
 
