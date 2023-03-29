@@ -23,12 +23,10 @@ html{
     font-size: 20px;
     padding: 10px;
     font-family: Times, serif;
-    height: 80%;
-  width: 180%;
 }
 .banner {
-  height: 80%;
-  width: 180%;
+  height: 90%;
+  width: 330%;
   margin: 70px;
   display: flex;
   flex-direction: column;
