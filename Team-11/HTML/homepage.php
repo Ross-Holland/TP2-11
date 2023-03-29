@@ -16,7 +16,7 @@
     <div class="content">
         <div class="colorContainer">
             <div class="homepageText , bold">
-                <p1>Trending Now!</p1>
+                <p1> OUR FAVOURITES!</p1>
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -33,21 +33,7 @@
                 </div>
 
             </div>
-            <div class="main">
-                
-    <div class="main-left">
-        <div class="social-media">
-    
-        <a href="http://www.facebook.com" class="s-btn"><i class="fa fa-facebook-f"></i></a>
-        <a href="http://www.twitter.com" class="s-btn"><i class="fa fa-twitter"></i></a>
-        <a href="http://www.instagram.com" class="s-btn"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-
-    <div class="main-right">
-    </div>
-</br>
-    <div class="banner">
+             
         <div class="f-text">
           <h1>
             STEP CORRECT
