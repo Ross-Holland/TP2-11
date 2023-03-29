@@ -42,6 +42,8 @@ html{
 }
 .f-text span {
   color: lightblue;
+   height: 90%;
+  width: 330%;
 }
 
 .btn {
