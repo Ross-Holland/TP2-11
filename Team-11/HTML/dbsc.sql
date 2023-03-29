@@ -133,7 +133,11 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (44, 'Reebok Exofit', 'Black Leather Reebok trainers. Inspired by the retro basketball look designed to promote style and comfort.', '10', 0, 45.99, 'Reebok Exofit.jpg', 'Reebok Exofit 1.jpg', 'Reebok Exofit 2.jpg'),
 (45, 'Slazenger Tower', 'Tall, supportive trainers by Slazenger. Designed for comfort and style.', '10', 0, 39.99, 'Slazenger Tower.jpg', 'Slazenger Tower 1.jpg', 'Slazenger Tower 2.jpg'),
 (46, 'Diesel Leroji', 'Talk, Black trainers designed by Diesel for you', '10', 0, 139.99, 'Diesel Leroji.jpg', 'Diesel Leroji 1.jpg', 'Diesel Leroji 2.jpg');
-
+(47, 'Ralph Lauren Slippers', 'Branded Ralph Lauren Slippers, designed for over the top support and comfort.', '13', 0, 39.99, 'Ralph Lauren Slippers.jpg', 'Ralph Lauren Slippers 1.jpg', 'Ralph Lauren Slippers 2.jpg'),
+(48, 'Original Penguin Slippers', 'Slippers by Penguin designed to keep your toes warm and offer ankle support at the same time. Recommended by most men for style and comfort.', '13', 0, 19.99, 'Original Penguin Slippers.jpg', 'Original Penguin Slippers 1.jpg', 'Original Penguin Slippers 2.jpg'),
+(49, 'Hush Puppies Slippers', 'Designed for comfort around the house, and to offer support to the wearer. Made from soft material for comfort.', '13', 0, 39.99, 'Hush Puppies Slippers.jpg', 'Hush Puppies Slippers 1.jpg', 'Hush Puppies Slippers 2.jpg'),
+(50, 'DKNY Slippers', 'DKNY Designer slippers. Simple design made for simplistic men who want comfort over style.', '13', 0, 24.99, 'DKNY Slippers.jpg', 'DKNY Slippers 1.jpg', 'DKNY Slippers 2.jpg'),
+(51, 'Ben Sherman Slippers', 'Patterned Ben Sherman Slippers designed for a woolen comfort and style', '13', 0, 29.99, 'Ben Sherman Slippers.jpg', 'Ben Sherman Slippers 1.jpg', 'Ben Sherman Slippers 2.jpg');
 
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES
 (1, 'Womens-boots'),
