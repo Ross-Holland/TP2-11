@@ -107,7 +107,7 @@ include 'connect.php';
                   }
                 }
                 else{
-                  echo "<script> alert(\"There are no Products\") </script>";
+                  echo "<script> alert(\"There are no Orders\") </script>";
                 }
               ?>
           </div>
