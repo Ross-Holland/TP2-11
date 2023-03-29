@@ -8,11 +8,14 @@
 
 <body>
     <?php
+    session_start();
+    $user_id = $_SESSION['user_id'];
     require 'header.php';
     ?>
 
     <div class="content">
         <main>
+        <a href="editdetails.php?id=<?php echo $user_id; ?>" style="display: block; width: 200px; margin: 0 auto; background-color: lightblue; margin-top: 10px; color: darkblue; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; border: 1px solid gray; font-weight: bold;">Click Here to edit your Details!</a>
             <h1>My Orders</h1>
             <table>
                 <tr>
@@ -27,7 +30,7 @@
                 <?php
                 require 'connect.php';
 
-                session_start();
+                
                 $user_id = $_SESSION['user_id'];
                 $sql = "SELECT * FROM orders WHERE user_id = $user_id";
                 $result = mysqli_query($conn, $sql);
