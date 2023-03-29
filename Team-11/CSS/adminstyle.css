@@ -205,7 +205,14 @@ nav .profile-details i{
 .home-section .home-content{
   position: relative;
   padding-top: 104px;
+  width: 80%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .home-content .overview-boxes{
   display: flex;
   align-items: center;
@@ -484,7 +491,7 @@ table {
 
 th,
 td {
-  text-align: left;
+  text-align: center;
   padding: 8px;
   border: 1px solid lightgray;
 }

@@ -19,7 +19,7 @@ if ($product) {
     echo "<label>Description:</label><input type='text' name='description' value='".$product['description']."' required><br>";
     echo "<label>Category:</label><input type='text' name='category' value='".$product['category']."' required><br>";
     echo "<label>Quantity:</label><input type='text' name='quantity' value='".$product['quantity']."' required><br>";
-    echo "<label>Price:</label><input type='text' name='price' value='£".$product['price']."' required><br>";
+    echo "<label>Price:</label><input type='text' name='price' value='".$product['price']."' required><br>";
     echo "<label>Image:</label><input type='file' name='image' ><br>";
     echo "<img src='../images/".$product['image']."' height = 25% width=30% >";
     echo "<br><input type='submit' name='submit' value='Update Product'>";

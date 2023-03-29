@@ -76,6 +76,7 @@ CREATE TABLE `viewproduct` (
 --block 3 end--
 --block 4--
 CREATE TABLE `orders` (
+  `id` int(5),
   `user_id` int(10),
   `product_id` int(10),
   `product_name` varchar(500),

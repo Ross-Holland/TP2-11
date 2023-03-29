@@ -95,7 +95,7 @@ include 'connect.php';
                             echo "<td>" . $row['name'] . "</td>";
                             echo "<td>" . $row['description'] . "</td>";
                             echo "<td>" . $row['quantity'] . "</td>";
-                            echo "<td>" . $row['price'] . "</td>";
+                            echo "<td>" ."£".  $row['price'] . "</td>";
                             echo "<td>" . "<img src='../images/$row[5]' alt='$row[1]' height = 80% width=80% >" . "</td>";
                             echo "<td> <a href='editproduct.php?id=" . $row['id'] . "'>Edit Product</a> </td>";
                         }
