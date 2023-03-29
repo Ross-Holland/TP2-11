@@ -56,7 +56,7 @@
                     <section id="shopnow">
                         <div class="shopnow">
                             <img src="../Images/shopwomens.jpg" alt="womens" />
-                            <div class="centered"><a href="../HTML/productPage.php"><button class="btn">Shop Now</button></a></div>
+                            <div class="centered"><a href="../HTML/womens.php"><button class="btn">Shop Now</button></a></div>
                         </div>
                         <div class="shopnow">
                             <img src="../Images/shopmens.jpg" alt="mens" />
