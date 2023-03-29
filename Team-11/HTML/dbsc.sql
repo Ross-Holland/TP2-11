@@ -137,7 +137,16 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (48, 'Original Penguin Slippers', 'Slippers by Penguin designed to keep your toes warm and offer ankle support at the same time. Recommended by most men for style and comfort.', '13', 0, 19.99, 'Original Penguin Slippers.jpg', 'Original Penguin Slippers 1.jpg', 'Original Penguin Slippers 2.jpg'),
 (49, 'Hush Puppies Slippers', 'Designed for comfort around the house, and to offer support to the wearer. Made from soft material for comfort.', '13', 0, 39.99, 'Hush Puppies Slippers.jpg', 'Hush Puppies Slippers 1.jpg', 'Hush Puppies Slippers 2.jpg'),
 (50, 'DKNY Slippers', 'DKNY Designer slippers. Simple design made for simplistic men who want comfort over style.', '13', 0, 24.99, 'DKNY Slippers.jpg', 'DKNY Slippers 1.jpg', 'DKNY Slippers 2.jpg'),
-(51, 'Ben Sherman Slippers', 'Patterned Ben Sherman Slippers designed for a woolen comfort and style', '13', 0, 29.99, 'Ben Sherman Slippers.jpg', 'Ben Sherman Slippers 1.jpg', 'Ben Sherman Slippers 2.jpg');
+(51, 'Ben Sherman Slippers', 'Patterned Ben Sherman Slippers designed for a woolen comfort and style', '13', 0, 29.99, 'Ben Sherman Slippers.jpg', 'Ben Sherman Slippers 1.jpg', 'Ben Sherman Slippers 2.jpg'),
+(52, 'Adidas Originals', 'Blue and White adidas trainers. Adidas is leading the market in trainers, get these material trainers now', '12', 0, 59.99, 'Adidas Originals.jpg', 'Adidas Originals 1.jpg', 'Adidas Originals 2.jpg'),
+(53, 'Lacoste Trainers', 'White branded Lacoste trainers. Prioritising style while offering support these low cut trainers are perfect for a day out!', '12', 0, 39.99, 'Lacoste Trainers.jpg', 'Lacoste Trainers 1.jpg', 'Lacoste Trainers 2.jpg'),
+(54, 'Reebok Classics', 'Take a trip back in time with these Reebok Classics. Be just like your younger self or dad, with these supportive and comftable trainers!', '12', 0, 79.99, 'Reebok Classics.jpg', 'Reebok Classics 1.jpg', 'Reebok Classics 2.jpg'),
+(55, 'Skechers GOwalk', 'The new black Skechers are the hot right now product when it comes to style! These black trainers come in a variety of sizes so get yours now!', '12', 0, 29.99, 'Skechers GOwalk.jpg', 'Skechers GOwalk.jpg', 'Skechers GOwalk.jpg'),
+(56, 'Vans Old Skool', 'These beige Vans will make you stand out amongst the crowd! They offer a bright stylish colour along with endless hours of sole and ankle support!', '12', 0, 49.99, 'Vans Old Skool.jpg', 'Vans Old Skool 1.jpg', 'Vans Old Skool 2.jpg');
+
+
+
+
 
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES
 (1, 'Womens-boots'),
