@@ -125,7 +125,9 @@
 }
 
 .guide img {
-  width: 350px;
+  width: 300px;
+  height: 250px;
+  padding: 10px;
 }
 
 .basket {

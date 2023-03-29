@@ -83,7 +83,9 @@
                                     <div class="popup" id="popup">
                                         <div class="popup-content">
                                             <h2>Size guide</h2>
-                                            <img src="../images/sizeguide.jpg"> <br>
+                                            <img src="../images/womensguide.jpg">
+                                            <img src="../images/mensguide.jpg"> 
+                                            <br>
                                             <a class="return" type="return" onclick="closePopup()">Return</a>
                                         </div>
                                     </div>
