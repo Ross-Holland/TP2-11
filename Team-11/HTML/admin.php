@@ -61,7 +61,7 @@ include 'connect.php';
         <nav>
             <div class="sidebar-button">
                 <i class='bx bx-menu sidebarBtn'></i>
-                <span class="products">Products</span>
+                <span class="users">Users</span>
             </div>
             
         </nav>
