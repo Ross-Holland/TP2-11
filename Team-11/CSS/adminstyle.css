@@ -82,7 +82,7 @@
 }
 .home-section.sales-boxes.recent-salesbox.table {
   border-collapse: collapse;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -291,7 +291,7 @@ nav .profile-details i{
 
 /* left box */
 .home-content .sales-boxes .recent-sales{
-  width: 65%;
+  width: 80%;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
@@ -401,7 +401,7 @@ nav .profile-details i{
     left: 220px;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1920px) {
   .home-content .sales-boxes{
     flex-direction: column;
   }
@@ -410,11 +410,11 @@ nav .profile-details i{
     overflow-x: scroll;
     margin-bottom: 30px;
   }
-  .home-content .sales-boxes .top-sales{
-    margin: 0;
+  .home-content .sales-boxes{
+    width: 100%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1920px) {
   .overview-boxes .box{
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
@@ -430,8 +430,8 @@ nav .profile-details i{
     height: 50px;
     min-width: 40px;
   }
-  .home-content .sales-boxes .sales-details{
-    width: 560px;
+  .home-content .sales-boxes .recent-sales .box{
+    width: 80%;
   }
 }
 @media (max-width: 550px) {
@@ -496,8 +496,9 @@ td {
 }
 
 .recent-salesbox {
-  background-color: white;
+  
   padding: 10px;
   border-radius: 12px;
   margin: 20px;
+  width: 80%;
 }
