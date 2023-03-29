@@ -71,11 +71,14 @@
                                         <option value="UK 4.5">UK 4.5</option>
                                         <option value="UK 5">UK 5</option>
                                         <option value="UK 5.5">UK 5.5</option>
-                                        <option value="UK 6">UK 6</option>
+                                        <option selected="selected" value="UK 6">UK 6</option>
                                         <option value="UK 6.5">UK 6.5</option>
                                         <option value="UK 7">UK 7</option>
                                         <option value="UK 7.5">UK 7.5</option>
                                         <option value="UK 8">UK 8</option>
+                                        <option value="UK 8.5">UK 8.5</option>
+                                        <option value="UK 9">UK 9</option>
+                                        <option value="UK 9.5">UK 9.5</option>
                                     </select>
                                 </form>
                                 <div class="guide">

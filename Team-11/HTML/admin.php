@@ -20,13 +20,13 @@ include 'connect.php';
         </div>
         <ul class="nav-links">
             <li>
-                <a href="admin.php">
+                <a href="admin.php" class="active">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Users</span>
                 </a>
             </li>
             <li>
-                <a href="adminproduct.php" action="adminproduct.php" class="active">
+                <a href="adminproduct.php" action="adminproduct.php">
                     <i class='bx bx-box'></i>
                     <span class="links_name">Product</span>
                 </a>
