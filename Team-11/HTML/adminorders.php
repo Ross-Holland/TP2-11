@@ -63,10 +63,7 @@ include 'connect.php';
                 <i class='bx bx-menu sidebarBtn'></i>
                 <span class="products">Orders</span>
             </div>
-            <div class="search-box">
-                <input type="text" placeholder="Search...">
-                <i class='bx bx-search'></i>
-            </div>
+            
         </nav>
 
         <div class="home-content">

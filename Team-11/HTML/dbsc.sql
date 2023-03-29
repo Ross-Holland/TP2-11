@@ -87,6 +87,10 @@ CREATE TABLE `orders` (
   `date` varchar(20),
   `order_processed` BOOLEAN
 );
+ALTER TABLE `orders` 
+  ADD PRIMARY KEY(`id`);
+ALTER TABLE `orders`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --block 4 end--
 --insert products into database--
 INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `price`, `image`, `image1`, `image2`) VALUES
