@@ -25,7 +25,7 @@ html{
 }
 .banner {
   height: 80%;
-  width: 100%;
+  width: 180%;
   margin: 70px;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ html{
   text-align: center;
   font-family: sans-serif;
   border: none;
-  background-color:white;
+  background-color:black;
 }
 img{
   padding-top: 10px;
