@@ -104,6 +104,14 @@ h6 {
   background: white;
   padding: 10px;
   border: 2px solid lightblue;
+  border-radius: 20px;
+}
+
+.addtobasket{
+  background: lightblue;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
 }
 
 .basket .order  {

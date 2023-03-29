@@ -42,7 +42,7 @@
                             <h3>$size</h3>
                             <h6>£$price</h6>
                             <form method='post' action='removeitemw.php'><input type='hidden' name='id' value='" . $id . "'><button class= 'remove' type='submit'>Remove</button></form> 
-                            <button onclick=\"window.location.href = 'movetobasket.php';\">Add to Basket!</button>
+                            <button class= 'addtobasket' onclick=\"window.location.href = 'movetobasket.php';\">Add to Basket!</button>
                             </div>
                     </div>";
                         }
