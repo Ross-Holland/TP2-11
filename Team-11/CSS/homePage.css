@@ -189,11 +189,9 @@ img{
 
 .colorContainer{
     background-color: lightblue;
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
     position: relative;
-    margin-left: 50%;
-    margin-top: 40px;
     padding: 10px;
 }
 
