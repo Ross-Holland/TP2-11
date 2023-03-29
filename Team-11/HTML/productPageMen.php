@@ -27,7 +27,7 @@ if (isset($_GET['category'])) {
 <body>
 <?php include('header.php');  ?>
 
-    <div class = "container">
+    <div class = "content">
 <main>
             <div class = "header">
                 <hr>
@@ -64,7 +64,7 @@ if (isset($_GET['category'])) {
 <?php } ?>
 
         <?php if (isset($_GET['category'])) { ?>
-            <button class="back"><a href="productPageMen.php">Browse other products</a></button>
+            <button class="back" onclick="history.back()">Browse other products</button>
         <?php } ?>
 
         
@@ -239,6 +239,9 @@ if (isset($_GET['category'])) {
         
 </html>
 
+<?php
+include('footer.php');
+?>
 
 
 
