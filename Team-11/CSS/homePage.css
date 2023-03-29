@@ -192,10 +192,10 @@ img{
 
 .colorContainer{
     background-color: lightblue;
-    height: 100%;
+    height: fit-content;
     width: fit-content;
     position: relative;
-    margin-left: 60%;
+    margin-left: 100%;
     margin-top: 60px;
     padding: 10px;
 
