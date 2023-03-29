@@ -39,7 +39,7 @@ require "connect.php";
       <form id="register" method="post">
         <input type="text" name="Fname" placeholder="First Name" required>
         <input type="text" name="Lname" placeholder="Last Name" required>
-        <input type="text" name="Email" placeholder="Email Address" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
         <input type="password" name="Password" placeholder="Password" required>
         <input type="password" name="Cpassword" placeholder="Confirm Password" required>
         <input type="text" name="Address" class="" id="Address" placeholder="Enter your address" required>
