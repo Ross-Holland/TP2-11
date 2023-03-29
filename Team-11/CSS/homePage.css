@@ -26,7 +26,7 @@ html{
 }
 .banner {
   height: 80%;
-  width: 190%;
+  width: 200%;
   margin: 70px;
   display: flex;
   flex-direction: column;
