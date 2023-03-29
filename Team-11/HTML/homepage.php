@@ -16,7 +16,7 @@
     <div class="content">
         <div class="colorContainer">
             <div class="homepageText , bold">
-                <p1>Products Trending Now!</p1>
+                <p1>Trending Now!</p1>
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -33,25 +33,58 @@
                 </div>
 
             </div>
-
-            <div class="homepageText">
-                <p1>
-                    Welcome to Step Correct -
-                    We are an online retailer
-                    <br>
-                    selling a variety of shoes and trainers.
-                    <br>
-                    <br>
-                    Please use the navigation bar above to look around.
-                    <br>
-                    If you have any feedback for us, please let us know.
-                    <br>
-                    <br>
-                    Enjoy your shop!
-                </p1>
-            </div>
-        </div>
+            <div class="main">
+                
+    <div class="main-left">
+        <div class="social-media">
+    
+        <a href="http://www.facebook.com" class="s-btn"><i class="fa fa-facebook-f"></i></a>
+        <a href="http://www.twitter.com" class="s-btn"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.instagram.com" class="s-btn"><i class="fa fa-instagram"></i></a>
+      </div>
     </div>
+
+    <div class="main-right">
+    </div>
+</br>
+    <div class="banner">
+        <div class="f-text">
+          <h1>
+            STEP CORRECT
+          </h1>
+        </div>
+        <a href="../HTML/homepage.php" class="btn">SHOP NOW</a>
+    </div>
+  </div>
+
+
+  <div id="container"> 
+    <div class="BESTSELLING1" class="item">
+      <img src= "../images/Airmax-90.jpg" alt="90" style="width:80%">
+      <div class="f-text2">
+        <h1>Unisex Nike Airmax 90</h1>
+        <p class="price">£150.00</p>
+      </div>
+  </div>
+                  
+          
+  <div class="TRENDING1" class="item">
+    <img src="../images/Airmax-97.jpg" alt="97s" style="width:80%">
+    <div class="f-text3">
+      <h1>Men’s Nike AirMax 97s</h1>
+      <p class="price">£125.99</p>
+    </div>
+  </div>
+        
+
+    <div class="NEWIN1" class="item">
+      <img src="../images/Ultraboost.jpg" alt="ultraboost" style="width:80%">
+      <div class="f-text4">
+        <h1> Women Adidas </h1>
+        <p class="price">£131.99</p>
+    </div>
+  </div>
+    
 </body>
 
 </html>
