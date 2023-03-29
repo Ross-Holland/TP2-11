@@ -16,7 +16,7 @@
     <div class="content">
         <div class="colorContainer">
             <div class="homepageText , bold">
-                <p1> OUR FAVOURITES!</p1>
+                <p1> OUR FAVOURITES! </p1>
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
