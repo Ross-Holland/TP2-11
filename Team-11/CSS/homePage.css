@@ -25,8 +25,8 @@ html{
     font-family: Times, serif;
 }
 .banner {
-  height: 80%;
-  width: 200%;
+  height: 90%;
+  width: 330%;
   margin: 70px;
   display: flex;
   flex-direction: column;
