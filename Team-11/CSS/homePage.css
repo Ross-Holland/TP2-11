@@ -4,18 +4,18 @@
 }
 
 body{
-    height: 180%;
+    height: 100%;
 }
 
 html{
-    height: 180%;
+    height: 100%;
 }
 
 .slideshow-container{
     position: relative;
     padding: 5px;
     margin-left: 10%;
-    margin-right: 25%
+    margin-right: 30%
 }
 
 .homepageText{
