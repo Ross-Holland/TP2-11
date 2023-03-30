@@ -40,7 +40,7 @@
 				<h3>Women Black Chunky Sandals</h3>
 				<p class="price">£29.99</p>
 			        <a href="../HTML/basket.php" class="button">Add to Cart</a>
-				<a href="../HTML/womens.php" class="button"> Women's Sandals</a>
+				<a href="../HTML/womens.php?category=5" class="button"> Women's Sandals</a>
 			</div>
 
 			<div class="product">
