@@ -13,87 +13,43 @@
     <?php
     include_once "header.php";
     ?>
-    <div class="content">
-        <div class="colorContainer">
-            <div class="homepageText , bold">
-                <p1> OUR FAVOURITES! </p1>
-            </div>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="../images/Airmax-90.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/Ultraboost.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/Airmax-97.jpg" style="width:100% height:20%" alt="images">
-                </div>
-                <div class="mySlides fade">
-                    <img src="../images/NMD-R1.jpg" style="width:100% height:20%" alt="images">
-                </div>
 
-            </div>
-             
-        <div class="f-text">
-          <h1>
-            STEP CORRECT
-          </h1>
-        </div>
-        <a href="../HTML/homepage.php" class="btn">SHOP NOW</a>
-    </div>
-  </div>
+	<main>
+		<section class="hero-section">
+			<h2>Step Up Your Style</h2>
+			<p>Find the perfect pair of shoes to match your style.</p>
+			<a href="#" class="button">Shop Now</a>
+		</section>
 
+		<section class="featured-section">
+			<h2>Featured Products</h2>
 
-  <div id="container"> 
-    <div class="BESTSELLING1" class="item">
-      <img src= "../images/Airmax-90.jpg" alt="90" style="width:80%">
-      <div class="f-text2">
-        <h1>Unisex Nike Airmax 90</h1>
-        <p class="price">£150.00</p>
-      </div>
-  </div>
-                  
-          
-  <div class="TRENDING1" class="item">
-    <img src="../images/Airmax-97.jpg" alt="97s" style="width:80%">
-    <div class="f-text3">
-      <h1>Men’s Nike AirMax 97s</h1>
-      <p class="price">£125.99</p>
-    </div>
-  </div>
-        
+			<div class="product">
+				<img src="Male Black Nike court vision low better trainers.jpg" alt="Men Product Shoes">
+				<h3>Men Black Nike court vision low better trainers</h3>
+				<p class="price">£119.99</p>
+				<a href="#" class="button">Add to Cart</a>
+			</div>
 
-    <div class="NEWIN1" class="item">
-      <img src="../images/Ultraboost.jpg" alt="ultraboost" style="width:80%">
-      <div class="f-text4">
-        <h1> Women Adidas </h1>
-        <p class="price">£131.99</p>
-    </div>
-  </div>
-    
+			<div class="product">
+				<img src="chunkysandals1.jpg" alt="Women Product Image">
+				<h3>Women Black Chunky Sandals</h3>
+				<p class="price">£29.99</p>
+				<a href="#" class="button">Add to Cart</a>
+			</div>
+
+			<div class="product">
+				<img src="Kids Black Schuh loopy leather school shoe.jpg" alt="Kids Unisex Product Shoe">
+				<h3>Unisex Kids Black Schuh loopy leather school shoe </h3>
+				<p class="price">£39.99</p>
+				<a href="#" class="button">Add to Cart</a>
+			</div>
+		</section>
+	</main>
+
 </body>
-
 </html>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000);
-    }
-</script>
-
+    
 <?php
 include('footer.php');
 ?>
