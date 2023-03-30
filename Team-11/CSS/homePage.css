@@ -42,13 +42,25 @@ main {
 
 }
 
+.SEARCH NOW{
+flex: 1;
+	padding: 20px;
+	margin: 10px;
+	background-color: lightblue;
+	color: white;
+	text-align: center;
+	font-size: 4rem;
+	letter-spacing: 0.5rem;
+	color: white;
+}
+
 
 .featured-section {
 	flex: 1;
 	padding: 20px;
 	margin: 10px;
 	background-color: lightblue;
-	color: black
+	color: white
 	align-items: center;
 	margin: 20px;
 	text-align: center;
@@ -61,7 +73,7 @@ main {
 	align-items: center;
 	margin: 20px;
 	text-align: center;
-	color: black;
+	color: white;
 }
 
 .product img {
@@ -86,6 +98,6 @@ main {
 	align-items: center;
 	margin: 20px;
 	text-align: center;
-	color: black;
+	color: white;
 	
 } 
