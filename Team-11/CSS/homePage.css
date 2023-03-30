@@ -7,7 +7,19 @@ body {
 	padding: 0;
 	font-family: Arial, sans-serif;
 	background-color: lightblue;
+	height: fit-content;
+	width: fit-content;
 }
+.colorContainer{
+    background-color: lightblue;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    margin-left: 85%;
+    margin-top: 50px;
+    padding: 10px;
+}
+
 
 h1 {
 	margin: 0;
@@ -38,6 +50,7 @@ main {
   width: 130%;
 
 }
+
 
 .featured-section {
 	flex: 1;
