@@ -18,7 +18,7 @@
 		<section class="hero-section">
 			<h2>Step Up Your Style</h2>
 			<p>Find the perfect pair of shoes to match your style.</p>
-        <a href="../HTML/homepage.php" class="btn">SHOP NOW</a>
+        <a href="../HTML/search.php" class="btn">SEARCH NOW</a>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="product">
-				<img src="C:\xampp\htdocs\Team-11\Images\chunkysandals.jpg" alt="Women Sandels">
+				<img src="C:\xampp\htdocs\Team-11\Images\chunkysandals.jpg" alt="">
 				<h3>Women Black Chunky Sandals</h3>
 				<p class="price">£29.99</p>
 			        <a href="../HTML/basket.php" class="button">Add to Cart</a>
@@ -44,7 +44,7 @@
 			</div>
 
 			<div class="product">
-				<img src="C:\xampp\htdocs\Team-11\Images\Kids Black Schuh loopy leather school shoe.jpg" alt="Kids Smart Shoes">
+				<img src="C:\xampp\htdocs\Team-11\Images\Kids Black Schuh loopy leather school shoe.jpg" alt="">
 				<h3>Unisex Kids Black Schuh loopy leather school shoe </h3>
 				<p class="price">£39.99</p>
 				<a href="../HTML/basket.php" class="button">Add to Cart</a>
