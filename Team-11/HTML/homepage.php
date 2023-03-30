@@ -32,7 +32,7 @@
 				<h3>Men Black Nike court vision low better trainers</h3>
 				<p class="price">£119.99</p>
 				<a href="../HTML/basket.php" class="button">Add to Cart</a>
-				<a href="../HTML/productPageMen.php" class="button"> Men's Lows</a>
+				<a href="../HTML/productPageMen.php?category=11" class="button"> Men's Lows</a>
 			</div>
 
 			<div class="product">
@@ -48,7 +48,7 @@
 				<h3>Unisex Kids Black Schuh loopy leather school shoe </h3>
 				<p class="price">£39.99</p>
 				<a href="../HTML/basket.php" class="button">Add to Cart</a>
-				<a href="../HTML/productPagekids.php" class="button"> Kids's Smart Shoes</a>
+				<a href="../HTML/productPagekids.php?category=14" class="button"> Kids's Smart Shoes</a>
 			</div>
 		</section>
 	</main>
