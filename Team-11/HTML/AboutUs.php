@@ -12,10 +12,8 @@
   <div class="content">
     <main>
       <h2>Our Story</h2>
-      <p>Welcome to our shoe company! We are a team of passionate individuals who love nothing more than providing our customers with high-quality, stylish footwear.
-        <br>At our core, we believe that shoes should be comfortable, durable, and stylish. That's why we use only the finest materials in all of our products,
-        <br>and we are constantly researching and testing new materials and techniques to make sure we're always on the cutting edge.
-        <br>Our team is made up of experts in design, manufacturing, and customer service, and we work together to ensure that every pair of shoes we produce meets our high standards. We are also committed to sustainability and ethical practices, and we strive to minimize our impact on the environment and to treat our workers fairly and with respect.
+      <p>Starting from a small classroom, our team of 9 have worked together to provide the best service possible.
+        <br>During our time at university we came up with an idea to start competing agianst those high level brands.
       </p>
 
       <h2>Our Team</h2>
