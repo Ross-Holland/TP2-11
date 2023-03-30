@@ -18,28 +18,31 @@
 		<section class="hero-section">
 			<h2>Step Up Your Style</h2>
 			<p>Find the perfect pair of shoes to match your style.</p>
-			<a href="#" class="button">Shop Now</a>
+        <a href="../HTML/homepage.php" class="btn">SHOP NOW</a>
+    </div>
+  </div>
+
 		</section>
 
 		<section class="featured-section">
 			<h2>Featured Products</h2>
 
 			<div class="product">
-				<img src="Male Black Nike court vision low better trainers.jpg" alt="Men Product Shoes">
+				<img src="Male Black Nike court vision low better trainers.jpg" alt="Men Trainers">
 				<h3>Men Black Nike court vision low better trainers</h3>
 				<p class="price">£119.99</p>
 				<a href="#" class="button">Add to Cart</a>
 			</div>
 
 			<div class="product">
-				<img src="chunkysandals1.jpg" alt="Women Product Image">
+				<img src="chunkysandals1.jpg" alt="Women Sandels">
 				<h3>Women Black Chunky Sandals</h3>
 				<p class="price">£29.99</p>
 				<a href="#" class="button">Add to Cart</a>
 			</div>
 
 			<div class="product">
-				<img src="Kids Black Schuh loopy leather school shoe.jpg" alt="Kids Unisex Product Shoe">
+				<img src="Kids Black Schuh loopy leather school shoe.jpg" alt="Kids Smart Shoes">
 				<h3>Unisex Kids Black Schuh loopy leather school shoe </h3>
 				<p class="price">£39.99</p>
 				<a href="#" class="button">Add to Cart</a>
