@@ -37,18 +37,7 @@ include 'connect.php';
                     <span class="links_name">Order list</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-coin-stack'></i>
-                    <span class="links_name">Stock</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-book-alt'></i>
-                    <span class="links_name">Total order</span>
-                </a>
-            </li>
+            
             <li class="log_out">
                 <a href="logout.php">
                     <i class='bx bx-log-out'></i>

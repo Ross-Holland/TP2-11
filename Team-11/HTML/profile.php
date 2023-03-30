@@ -41,7 +41,7 @@
                     echo "<td>" . $row['product_name'] . "</td>";
                     echo "<td>" . $row['product_description'] . "</td>";
                     echo "<td>" . $row['product_price'] . "</td>";
-                    echo "<td>" . $row['product_image'] . "</td>";
+                    echo "<td>" . "<img src ='../images/" . $row['product_image'] ."' width = 40% height=40% >". "</td>";
                     echo "<td>" . $row['size'] . "</td>";
                     echo "<td>" . $row['date'] . "</td>";
                     if ($row['order_processed'] == '0') {

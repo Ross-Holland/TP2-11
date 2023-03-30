@@ -47,11 +47,11 @@
                         <label>Message</label>
                         <textarea rows="5" placeholder="what would you like to know?" id="message-box"></textarea>
 
-                        <button type="submit" id="submit-button" onclick="sendEmail()">SEND</button>
+                        <button type="submit" id="submit-button">SEND</button>
 
                     </form>
                 </div>
-
+                
                 <div class="contact-right">
                     <h3>How to Reach Us:</h3>
 
@@ -85,7 +85,7 @@
                 // redirect to home page
                 setTimeout(function() {
                     window.location.href = "./homepage.php";
-                }, 100);
+                }, 2);
                 
             }
         </script>
