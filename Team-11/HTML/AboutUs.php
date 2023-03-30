@@ -12,8 +12,11 @@
   <div class="content">
     <main>
       <h2>Our Story</h2>
-      <p>Starting from a small classroom, our team of 9 have worked together to provide the best service possible.
-        <br>During our time at university we came up with an idea to start competing agianst those high level brands.
+      <p>Welcome to our shoe company! We are a team of passionate individuals who love nothing more than providing our customers with high-quality, stylish footwear.
+        <br>Using the finst materials, we have designed comfortable, durable and stylish footwear.
+        <br>Our team is made up of experts in design, manufacturing, and customer service, and we work together to ensure that every pair of shoes we produce meets our high standards.
+        <br>But most of all, we are passionate about shoes. We believe that the right pair of shoes can make you feel confident, stylish, and ready to take on the world. That's why we put so much care and attention into every pair we make.
+        <br>Thank you for choosing our shoe company. We hope you love our shoes as much as we do!
       </p>
 
       <h2>Our Team</h2>
