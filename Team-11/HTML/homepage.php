@@ -28,10 +28,11 @@
 			<h2>Featured Products</h2>
 
 			<div class="product">
-				<img src="C:\xampp\htdocs\Team-11\Images\Male Black Nike court vision low better trainers.jpg"alt="Men Trainers">
+				<img src="C:\xampp\htdocs\Team-11\Images\Male Black Nike court vision low better trainers.jpg"alt="">
 				<h3>Men Black Nike court vision low better trainers</h3>
 				<p class="price">£119.99</p>
 				<a href="../HTML/basket.php" class="button">Add to Cart</a>
+				<a href="../HTML/productPageMen.php" class="button"> Men's Lows</a>
 			</div>
 
 			<div class="product">
