@@ -31,7 +31,6 @@
 				<img src="../Images/Male Black Nike court vision low better trainers.jpg"alt="">
 				<h3>Men Black Nike court vision low better trainers</h3>
 				<p class="price">£119.99</p>
-				<a href="../HTML/basket.php" class="button">Add to Cart</a>
 				<a href="../HTML/productPageMen.php?category=11" class="button"> Men's Lows</a>
 			</div>
 
@@ -39,7 +38,6 @@
 				<img src="../Images/chunkysandals.jpg" alt="">
 				<h3>Women Black Chunky Sandals</h3>
 				<p class="price">£29.99</p>
-			        <a href="../HTML/basket.php" class="button">Add to Cart</a>
 				<a href="../HTML/womens.php?category=5" class="button"> Women's Sandals</a>
 			</div>
 
@@ -47,7 +45,6 @@
 				<img src="../Images/Kids Black Schuh loopy leather school shoe.jpg" alt="">
 				<h3>Unisex Kids Black Schuh loopy leather school shoe </h3>
 				<p class="price">£39.99</p>
-				<a href="../HTML/basket.php" class="button">Add to Cart</a>
 				<a href="../HTML/productPagekids.php?category=14" class="button"> Kids's Smart Shoes</a>
 			</div>
 		</section>
