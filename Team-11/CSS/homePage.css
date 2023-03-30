@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family:'Roboto Mono', monospace;
 	background-color: lightblue;
 	height: fit-content;
 	width: fit-content;
@@ -48,6 +48,7 @@ main {
 	padding: 20px;
 	margin: 10px;
 	background-color: lightblue;
+	color: black
 	align-items: center;
 	margin: 20px;
 	text-align: center;
@@ -60,7 +61,7 @@ main {
 	align-items: center;
 	margin: 20px;
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 .product img {
@@ -80,5 +81,11 @@ main {
 }
 
 .button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	text-align: center;
+	color: black;
 	
 } 
