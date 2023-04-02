@@ -61,6 +61,7 @@ include 'connect.php';
                 <div class="recent-sales box">
                     <div class="title">Users</div>
                             <table>
+                                <br>
                                 <tr>
                                     <th>User ID</th>
                                     <th>Firstname</th>

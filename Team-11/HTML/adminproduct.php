@@ -62,6 +62,7 @@ include 'connect.php';
                     <div class="title">Products</div>
 
                     <table>
+                        <br>
                         <tr>
                             <th>ID</th>
                             <th>Name</th>

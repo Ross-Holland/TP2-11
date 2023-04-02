@@ -142,7 +142,48 @@ INSERT INTO `products` (`id`, `name`, `description`, `category`, `quantity`, `pr
 (53, 'Lacoste Trainers', 'White branded Lacoste trainers. Prioritising style while offering support these low cut trainers are perfect for a day out!', '12', 0, 39.99, 'Lacoste Trainers.jpg', 'Lacoste Trainers 1.jpg', 'Lacoste Trainers 2.jpg'),
 (54, 'Reebok Classics', 'Take a trip back in time with these Reebok Classics. Be just like your younger self or dad, with these supportive and comftable trainers!', '12', 0, 79.99, 'Reebok Classics.jpg', 'Reebok Classics 1.jpg', 'Reebok Classics 2.jpg'),
 (55, 'Skechers GOwalk', 'The new black Skechers are the hot right now product when it comes to style! These black trainers come in a variety of sizes so get yours now!', '12', 0, 29.99, 'Skechers GOwalk.jpg', 'Skechers GOwalk.jpg', 'Skechers GOwalk.jpg'),
-(56, 'Vans Old Skool', 'These beige Vans will make you stand out amongst the crowd! They offer a bright stylish colour along with endless hours of sole and ankle support!', '12', 0, 49.99, 'Vans Old Skool.jpg', 'Vans Old Skool 1.jpg', 'Vans Old Skool 2.jpg');
+(56, 'Vans Old Skool', 'These beige Vans will make you stand out amongst the crowd! They offer a bright stylish colour along with endless hours of sole and ankle support!', '12', 0, 49.99, 'Vans Old Skool.jpg', 'Vans Old Skool 1.jpg', 'Vans Old Skool 2.jpg'),
+(57, ‘Nike Black Lows’, ‘These black Nike lows offer style and protection to the wearer. The padded ankle and rubber soles make sure the wearer is comfy and safe’, ‘11’, 10, 59.99, ‘Nike Black Lows.jpg’, ‘Nike Black Lows 1.jpg’, ‘Nike Black Lows 2.jpg’),
+(58, ‘Nike Lows’, ‘These Nike lows offer style and protection to the wearer. The padded ankle and rubber soles make sure the wearer is comfy and safe’, ‘11’, 15, 59.99, ‘Nike Lows.jpg’, ‘Nike Lows 1.jpg’, ‘Nike Lows 2.jpg’),
+(59, ‘Nike White Lows’, ‘These white Nike lows offer style and protection to the wearer. The padded ankle and rubber soles make sure the wearer is comfy and safe’, ‘11’, 20, 59.99, ‘Nike White Lows.jpg’, ‘Nike White Lows 1.jpg’, ‘Nike White Lows 2.jpg’),
+(59, ‘Black Polo Ralph Lauren’, ‘These black Ralph Lauren trainers offer comfy and easy to clean protection through the leather design.’, ‘11’, 25, 74.99, ‘Polo Ralph Lauren Black.jpg’, ‘Polo Ralph Lauren Black 1.jpg’, ‘Polo Ralph Lauren Black 2.jpg’),
+(60, ‘Polo Ralph Lauren Lows’, ‘These Ralph Lauren lows offer comfy and easy to clean protection through the leather design.’, ‘11’, 25, 74.99, ‘Polo Ralph Lauren Lows.jpg’, ‘Polo Ralph Lauren Lows 1.jpg’, ‘Polo Ralph Lauren Lows 2.jpg’),
+
+(61, ‘Black Rhino Boots’, ‘Firetrap Rhino boot provides excellent support for the wearer as well as easy to fasten up with the Velcro lining. Stylish and comfort all in one boot!’, ‘14’, 5, 34.99, ‘Black Rhino Boot.jpg’, ‘Black Rhino Boot 1.jpg’, ‘Black Rhino Boot 2.jpg’),
+
+(62, ‘Faith Biker Boot’, ‘These brown boots are designed with a zip on the side for ease of use. They are lined with fur and have extended ankle support to offer comfort and safety!’, ‘14’, 15, 29.99, ‘Faith Biker Boot.jpg’, ‘Faith Biker Boot 1.jpg’, ‘Faith Biker Boot 2.jpg’),
+
+(63, ‘Rhino Boots’, ‘Firetrap Rhino boot provides excellent support for the wearer as well as easy to fasten up with the Velcro lining. Stylish and comfort all in one boot!’, ‘14’, 10, 34.99, ‘Rhino Boot.jpg’, ‘Rhino Boot 1.jpg’, ‘Rhino Boot 2.jpg’),
+(64, ‘Rockport Chelsea Boot’, ‘Beige casual Chelsea boot, providing style and comfort for all your exciting and adventurous days out!’, ‘14’, 20, 34.99, ‘Rockport Bonita Chelsea Boot.jpg’, ‘Rockport Bonita Chelsea Boot 1.jpg’, ‘Rockport Bonita Chelsea Boot 2.jpg’),
+(65, ‘Tahoe Snug Boot’, ‘Slip on style boot with a padded inside to provide comfort for your child. The fur lining is warm and soft and the extended ankle provides support. Order yours today!’, ‘14’, 30, 24.99, ‘Tahoe Snug Boot.jpg’, ‘Tahoe Snug Boot 1.jpg’, ‘Tahoe Snug Boot 2.jpg’),
+
+(66, ‘Cavour High Tops’, ‘Cavour high tops are designed based off a retro theme. They come with a padded ankle collar for comfort and safety. Rubber sole to absorb impact.’, ‘15’, 30, 34.99, ‘Cavour Hightops.jpg’, ‘Cavour Hightops 1.jpg’, ‘Cavour Hightops 2.jpg’),
+(67, ‘Cure High Tops’, ‘Black and Royal blue, these hightops will make you stand out! They provide style and comfort!’, ‘15’, 15, 44.99, ‘Cure Hightops.jpg’, ‘Cure Hightops 1.jpg’, ‘Cure Hightops 2.jpg’),
+(68, ‘Manoa Leather High Tops’, ‘These Brown leather hightops are designed for all weather terrain. Easy to clean and provide comfort and safety for your little ones.’, ‘15’, 25, 39.99, ‘Manoa Leather Hightops.jpg’, ‘Manoa Leather Hightops 1.jpg’, ‘Manoa Leather Hightops 2.jpg’),
+
+
+(69, ‘Nike Black High Tops’, ‘Designer Nikes top of the range childrens hightops, providing style and comfort for your little ones. Comes with a textured sole and padded ankle support.’, ‘15’, 20, 59.99, ‘Nike Black Hightops.jpg’, ‘Nike Black Hightops 1.jpg’, ‘Nike Black Hightops 2.jpg’),
+(70, ‘Nike Court High Tops’, ‘Designer Nikes top of the range childrens hightops, providing style and comfort for your little ones. Comes with a textured sole and padded ankle support.’, ‘15’, 20, 59.99, ‘Nike Court Hightops.jpg’, ‘Nike Court Hightops 1.jpg’, ‘Nike Court Hightops 2.jpg’),
+
+(71, ‘Adidas Black School Shoes’, ‘These leather black trainers are perfect for all weather conditions. They are easy to put on due to the Velcro and easy to clean. Soft and safe for your child.’, ‘16’, 10, 39.99, ‘Adidas Black School Shoe.jpg’, ‘Adidas Black School Shoe 1.jpg’, ‘Adidas Black School Shoe 2.jpg’),
+(72, ‘Dr Martens School Shoes’, ‘Stylish leather Dr Martens perfect for your child. Offering foot support via the straps as well as style making them happy and safe.’, ‘16’, 20, 59.99, ‘Dr Martens School Shoes.jpg’, ‘Dr Martens School Shoes 1.jpg’, ‘Dr Martens School Shoes 2.jpg’),
+(73, ‘Schuh Black Leather Shoes’, ‘The black leather schuh shoes are simple yet stylish. The leather makes them resistant to water and easy to clean making sure your child is protected in all environments.’, ‘16’, 30, 29.99, ‘Schuh Black Leather Shoes.jpg’, ‘Schuh Black Leather Shoes 1.jpg’, ‘Schuh Black Leather Shoes 2.jpg’),
+(74, ‘Schuh Leather Shoes’, ‘These slip on and off leather shoes are perfect for young children. No laces to worry about and they offer ankle support for the wearer making them safe.’, ‘16’, 40, 19.99, ‘Schuh Leather Shoes.jpg’, ‘Schuh Leather Shoes 1.jpg’, ‘Schuh Leather Shoes 2.jpg’),
+(75, ‘Schuh Toddler Shoes’, ‘Leather toddler shoes designed for small feet. Providing safety and security via the strap provided.’, ‘16’, 40, 19.99, ‘Schuh Toddler Shoe.jpg’, ‘Schuh Toddler Shoe 1.jpg’, ‘Schuh Toddler Shoe 2.jpg’),
+
+(76, ‘Lelli Kelly Trainers’, ‘These bright Lelli Kelly shoes will make your child stand out! The fabric material offers a comfy feel while providing adequate protection to your childs ankle through the padded support.’, ‘17’, 15, 49.99, ‘Lelli Kelly Trainers.jpg’, ‘Lelli Kelly Trainers 1.jpg’, ‘Lelli Kelly Trainers 2.jpg’),
+(77, ‘New Balance Kids Trainers’, ‘These trainers are designed for your sporty children. With the padded ankle support and rubber soles these shoes offer excellent protection and comfort.’, ‘17’, 25, 24.99, ‘New Balance Kids Trainers.jpg’, ‘New Balance Kids Trainers 1.jpg’, ‘New Balance Kids Trainers 2.jpg’),
+(78, ‘Nike Kids Trainers’, ‘These white trainers are perfect for your everyday tasks.’, ‘17’, 5, 49.99, ‘Nike Kids Trainers.jpg’, ‘Nike Kids Trainers 1.jpg’, ‘Nike Kids Trainers 2.jpg’),
+(79, ‘Vans B&C Trainers’, ‘These material vans are perfect for young kids in all walks of life. They are comfy and offer great support though the padded ankle and rubber soles.’, ‘17’, 35, 29.99, ‘Vans B&C Trainers.jpg’, ‘Vans B&C Trainers 1.jpg’, ‘Vans B&C Trainers 2.jpg’),
+(80, ‘Vans Kids Trainers’, ‘These Velcro black vans are perfect beginner shoes for your kids. They provide comfort and safety and are easy to slip on and off.’, ‘17’, 10, 24.99, ‘Vans Kids Trainers.jpg’, ‘Vans Kids Trainers 1.jpg’, ‘Vans Kids Trainers 2.jpg’),
+
+
+(81, ‘RVROVIC Kids Slippers’, ‘Cute and comfortable these slippers will make any animal lover happy.’, ‘18’, 10, 24.99, ‘RVROVIC Kids Slippers.jpg’, ‘RVROVIC Kids Slippers 1.jpg’, ‘RVROVIC Kids Slippers 2.jpg’),
+(82, ‘Baby Yoda Slippers’, ‘Soft and comfortable. These Disney themed slippers will have your child excited and comfortable at the same time. Perfect for Star Wars fans.’, ‘18’, 20, 24.99, ‘Baby Yoda Slippers.jpg’, ‘Baby Yoda Slippers 1.jpg’, ‘Baby Yoda Slippers 2.jpg’),
+(83, ‘Sisttke Kids Slippers’, ‘Pink and cat friendly. Perfect for any feline lovers! Order yours now.’, ‘18’, 10, 24.99, ‘Sisttke Kids Slippers.jpg’, ‘Sisttke Kids Slippers 1.jpg’, ‘Sisttke Kids Slippers 2.jpg’),
+(84, ‘Sonic Slippers’, ‘Sonic slippers for your young ones. Make them feel as fast as sonic and comfortable at the same time!’, ‘18’, 20, 24.99, ‘Sonic Slippers.jpg’, ‘Sonic Slippers 1.jpg’, ‘Sonic Slippers 2.jpg’),
+(85, ‘Toy Story Slippers’, ‘Take Woody on all of your adventures with these soft fabric slippers.’, ‘18’, 10, 24.99, ‘Toy Story Slippers.jpg’, ‘Toy Story Slippers 1.jpg’, ‘Toy Story Slippers 2.jpg’);
+
 
 
 
